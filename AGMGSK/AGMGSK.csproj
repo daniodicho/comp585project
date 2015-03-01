@@ -64,16 +64,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\colorTexture.png" />
+    <Content Include="Content\heightTexture.png" />
+    <Content Include="Content\inspectorBackground.png" />
+    <Content Include="Content\marble.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\GameName1\GameName1\GameName1.csproj">
       <Project>{b5a4d68f-b225-429b-8be5-80b267c40409}</Project>
       <Name>GameName1</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\100x100x100Brick.x" />
+    <None Include="Content\100x50x100Marker.x" />
+    <None Include="Content\AGMGSKContent.contentproj" />
+    <None Include="Content\boundingSphereV3.x" />
+    <None Include="Content\cloudV3.x" />
+    <None Include="Content\Consolas.spritefont" />
+    <None Include="Content\CourierNew.spritefont" />
+    <None Include="Content\dogV3.x" />
+    <None Include="Content\magentaAvatarV3.x" />
+    <None Include="Content\redAvatarV3.x" />
+    <None Include="Content\snoman.ac" />
+    <None Include="Content\snoman.x" />
+    <None Include="Content\snowplow.x" />
+    <None Include="Content\squirrel.x" />
+    <None Include="Content\templeV3.x" />
+    <None Include="Content\treasure2.ac" />
+    <None Include="Content\treasure2.x" />
+    <None Include="Content\treasure3.x" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

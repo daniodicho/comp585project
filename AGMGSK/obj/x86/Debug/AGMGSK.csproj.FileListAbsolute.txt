@@ -79,3 +79,10 @@ C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.RawInp
 C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\obj\x86\Debug\AGMGSK.csprojResolveAssemblyReference.cache
 C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\CourierNew.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\treasure2.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\treasure3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\magentaAvatarV3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\redAvatarV3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\snoman.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\snowplow.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\squirrel.xnb

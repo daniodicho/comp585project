@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGMGSK", "AGMGSK\AGMGSK.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameName1", "GameName1\GameName1\GameName1.csproj", "{B5A4D68F-B225-429B-8BE5-80B267C40409}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "GameName1Content", "GameName1\GameName1Content\GameName1Content.contentproj", "{B36AE0AF-A147-41F3-9033-214C5142051D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameName1Content", "GameName1\GameName1Content\GameName1Content.contentproj", "{B36AE0AF-A147-41F3-9033-214C5142051D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

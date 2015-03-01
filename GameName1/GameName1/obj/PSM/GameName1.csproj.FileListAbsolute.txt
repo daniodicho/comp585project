@@ -34,3 +34,10 @@ C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\IgnoreMe.dl
 C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\IgnoreMe.dll
 C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\CourierNew.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\treasure2.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\treasure3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\magentaAvatarV3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\redAvatarV3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\snoman.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\snowplow.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\squirrel.xnb
