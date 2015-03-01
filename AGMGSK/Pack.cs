@@ -1,10 +1,18 @@
-﻿/*  
-    Copyright (C) 2015 G. Michael Barnes
- 
-    The file Pack.cs is part of AGMGSKv6 a port and update of AGXNASKv5 from
-    XNA 4 refresh to MonoGames 3.2.  
+﻿/* 565 Spring 2014
+ * Project 1: Models, terrain and treasures
+ * 
+ * Dipen Joshi <dipen.joshi.37@my.csun.edu>
+ * Steven Wirsz <steven@wirsz.com>
+ * Brandon Wollner <djcheshirewyw@gmail.com>
+ */
 
-    AGMGSKv6 is free software: you can redistribute it and/or modify
+/*  
+    Copyright (C) 2014 G. Michael Barnes
+ 
+    The file Pack.cs is part of AGMGSKv5 a port of AGXNASKv4 from
+    XNA 4 refresh to MonoGames 3.0.6.
+
+    AGMGSKv5 is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -25,12 +33,14 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-#if MONOGAMES //  true, build for MonoGames
+#if ! __XNA4__  // when __XNA4__ == true build for MonoGames
    using Microsoft.Xna.Framework.Storage; 
 #endif
+using Microsoft.Xna.Framework.GamerServices;
 #endregion
 
-namespace AGMGSKv6 {
+namespace AGMGSKv6
+{
 
 /// <summary>
 /// Pack represents a "flock" of MovableObject3D's Object3Ds.
@@ -38,10 +48,25 @@ namespace AGMGSKv6 {
 /// With no leader, determine a "virtual leader" from the flock's members.
 /// Model3D's inherited List<Object3D> instance holds all members of the pack.
 /// 
-/// 2/1/2015 last changed
+/// 1/25/2012 last changed
 /// </summary>
 public class Pack : MovableModel3D {   
    Object3D leader;
+   Random random = null;
+
+/// <summary>
+/// Construct a leaderless pack.
+/// </summary>
+/// <param name="theStage"> the scene</param>
+/// <param name="label"> name of pack</param>
+/// <param name="meshFile"> model of pack instance</param>
+   public Pack(Stage theStage, string label, string meshFile)
+      : base(theStage, label, meshFile) 
+      {
+      isCollidable = true;
+      leader = null;
+      random = new Random();
+      }
 
 /// <summary>
 /// Construct a pack with an Object3D leader
@@ -49,24 +74,11 @@ public class Pack : MovableModel3D {
 /// <param name="theStage"> the scene </param>
 /// <param name="label"> name of pack</param>
 /// <param name="meshFile"> model of a pack instance</param>
-/// <param name="xPos, zPos">  approximate position of the pack </param>
-/// <param name="aLeader"> alpha dog can be used for flock center and alignment </param>
-   public Pack(Stage theStage, string label, string meshFile, int nDogs, int xPos, int zPos, Object3D theLeader)
+/// <param name="aLeader"> Object3D alignment and pack center </param>
+   public Pack(Stage theStage, string label, string meshFile, Object3D aLeader)
       : base(theStage, label, meshFile) {
       isCollidable = true;
-		random = new Random();
-      leader = theLeader;
-		int spacing = stage.Spacing;
-		// initial vertex offset of dogs around (xPos, zPos)
-		int [,] position = { {0, 0}, {7, -4}, {-5, -2}, {-7, 4}, {5, 2} };
-		for( int i = 0; i < position.GetLength(0); i++) {
-			int x = xPos + position[i, 0];
-			int z = zPos + position[i, 1];
-			float scale = (float)(0.5 + random.NextDouble());
-			addObject( new Vector3(x * spacing, stage.surfaceHeight(x, z), z * spacing),
-						  new Vector3(0, 1, 0), 0.0f,
-						  new Vector3(scale, scale, scale));
-			}
+      leader = aLeader;
       }
 
    /// <summary>

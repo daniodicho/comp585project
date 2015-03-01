@@ -1,10 +1,18 @@
-/*  
-    Copyright (C) 2015 G. Michael Barnes
- 
-    The file Agent.cs is part of AGMGSKv6 a port and update of AGXNASKv5 from
-    XNA 4 refresh to MonoGames 3.2.  
+/* 565 Spring 2014
+ * Project 1: Models, terrain and treasures
+ * 
+ * Dipen Joshi <dipen.joshi.37@my.csun.edu>
+ * Steven Wirsz <steven@wirsz.com>
+ * Brandon Wollner <djcheshirewyw@gmail.com>
+ */
 
-    AGMGSKv6 is free software: you can redistribute it and/or modify
+/*  
+    Copyright (C) 2014 G. Michael Barnes
+ 
+    The file Agent.cs is part of AGMGSKv5 a port of AGXNASKv4 from
+    XNA 4 refresh to MonoGames 3.0.6.  
+
+    AGMGSKv5 is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -25,12 +33,14 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-#if MONOGAMES //  true, build for MonoGames
+#if ! __XNA4__  // when __XNA4__ == true build for MonoGames
    using Microsoft.Xna.Framework.Storage; 
 #endif
+using Microsoft.Xna.Framework.GamerServices;
 #endregion
 
-namespace AGMGSKv6 {
+namespace AGMGSKv6
+{
 
 /// <summary>
 /// A model that moves.  
@@ -46,7 +56,7 @@ public abstract class Agent : MovableModel3D {
    protected Object3D agentObject = null;
    protected Camera agentCamera, first, follow, above;
    public enum CameraCase { FirstCamera, FollowCamera, AboveCamera }
-
+   protected int treasures;  // SW number of treasures found by this agent
 
    /// <summary>
    /// Create an Agent.
@@ -76,14 +86,21 @@ public abstract class Agent : MovableModel3D {
       }
  
    // Properties  
- 
+
   public Object3D AgentObject {
       get { return agentObject; }}
    
    public Camera AvatarCamera {
       get { return agentCamera; }
-     set { agentCamera = value; }
+      set { agentCamera = value; }                                              
   }
+
+   // SW Get # of treasures or increase # treasures
+   public int IncTreasures
+   {
+       get { return treasures; }
+       set { treasures = value; }
+   }
 
    public Camera Follow {
       get { return follow; }}
@@ -106,7 +123,6 @@ public abstract class Agent : MovableModel3D {
       base.Update(gameTime); 
       // Agent is in correct (X,Z) position on the terrain 
       // set height to be on terrain -- this is a crude "first approximation" solution.
-		// suggest you design and implement your own version either w/in Agent or Stage
       stage.setSurfaceHeight(agentObject);
       }
               

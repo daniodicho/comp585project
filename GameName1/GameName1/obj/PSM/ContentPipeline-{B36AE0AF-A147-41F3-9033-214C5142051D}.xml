@@ -7,11 +7,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\100x100x100Brick.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\100x100x100Brick.xnb</Output>
       <Time>2015-02-09T15:23:43.7173822-08:00</Time>
       <Dependency>
-        <Key>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\100x100x100Brick_0.xml</Key>
-        <Value>2015-02-09T15:27:49.2400869-08:00</Value>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\100x100x100Brick_0.xml</Key>
+        <Value>2015-02-28T16:15:39.6400818-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -20,11 +20,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\100x50x100Marker.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\100x50x100Marker.xnb</Output>
       <Time>2015-02-09T15:23:43.7093847-08:00</Time>
       <Dependency>
-        <Key>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\100x50x100Marker_0.xml</Key>
-        <Value>2015-02-09T15:27:49.4591223-08:00</Value>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\100x50x100Marker_0.xml</Key>
+        <Value>2015-02-28T16:15:39.936294-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -33,11 +33,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\boundingSphereV3.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\boundingSphereV3.xnb</Output>
       <Time>2015-02-09T15:23:43.7333867-08:00</Time>
       <Dependency>
-        <Key>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\boundingSphereV3_0.xml</Key>
-        <Value>2015-02-09T15:27:49.5216222-08:00</Value>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\boundingSphereV3_0.xml</Key>
+        <Value>2015-02-28T16:15:40.0553778-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -46,11 +46,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\cloudV3.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\cloudV3.xnb</Output>
       <Time>2015-02-09T15:23:43.7453837-08:00</Time>
       <Dependency>
-        <Key>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\cloudV3_0.xml</Key>
-        <Value>2015-02-09T15:27:49.6934999-08:00</Value>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\cloudV3_0.xml</Key>
+        <Value>2015-02-28T16:15:40.3395807-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -59,11 +59,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\dogV6.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\dogV6.xnb</Output>
       <Time>2015-02-09T15:23:43.7693857-08:00</Time>
       <Dependency>
-        <Key>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\dogV6_0.xml</Key>
-        <Value>2015-02-09T15:27:49.7247502-08:00</Value>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\dogV6_0.xml</Key>
+        <Value>2015-02-28T16:15:40.396621-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -72,11 +72,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\magentaAvatarV6.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\magentaAvatarV6.xnb</Output>
       <Time>2015-02-09T15:23:43.7893877-08:00</Time>
       <Dependency>
-        <Key>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\magentaAvatarV6_0.xml</Key>
-        <Value>2015-02-09T15:27:49.771626-08:00</Value>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\magentaAvatarV6_0.xml</Key>
+        <Value>2015-02-28T16:15:40.4546616-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -85,11 +85,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\redAvatarV6.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\redAvatarV6.xnb</Output>
       <Time>2015-02-09T15:23:43.8054394-08:00</Time>
       <Dependency>
-        <Key>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\redAvatarV6_0.xml</Key>
-        <Value>2015-02-09T15:27:49.8028763-08:00</Value>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\redAvatarV6_0.xml</Key>
+        <Value>2015-02-28T16:15:40.5177068-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -98,13 +98,13 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\templeV3.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\templeV3.xnb</Output>
       <Time>2015-02-09T15:23:43.8133918-08:00</Time>
       <Dependency>
-        <Key>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\templeV3_0.xml</Key>
-        <Value>2015-02-09T15:27:49.9435289-08:00</Value>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\templeV3_0.xml</Key>
+        <Value>2015-02-28T16:15:40.7428661-08:00</Value>
       </Dependency>
-      <Request>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\marble_0.xnb</Request>
+      <Request>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\marble_0.xnb</Request>
     </Item>
     <Item>
       <Source>Consolas.spritefont</Source>
@@ -112,8 +112,17 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\Consolas.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\Consolas.xnb</Output>
       <Time>2015-02-09T15:23:43.7613855-08:00</Time>
+    </Item>
+    <Item>
+      <Source>CourierNew.spritefont</Source>
+      <Name>CourierNew</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\CourierNew.xnb</Output>
+      <Time>2015-02-28T16:15:21.0306237-08:00</Time>
     </Item>
     <Item>
       <Source>colorTexture.png</Source>
@@ -121,8 +130,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\colorTexture.xnb</Output>
-      <Time>2015-02-09T15:23:43.7533887-08:00</Time>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\colorTexture.xnb</Output>
+      <Time>2015-02-28T13:22:06.4331689-08:00</Time>
     </Item>
     <Item>
       <Source>heightTexture.png</Source>
@@ -130,8 +139,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\heightTexture.xnb</Output>
-      <Time>2015-02-09T15:23:43.7773866-08:00</Time>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\heightTexture.xnb</Output>
+      <Time>2015-02-28T00:37:28.7032675-08:00</Time>
     </Item>
     <Item>
       <Source>inspectorBackground.png</Source>
@@ -139,7 +148,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\inspectorBackground.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\inspectorBackground.xnb</Output>
       <Time>2015-02-09T15:23:43.7813861-08:00</Time>
     </Item>
     <Item>
@@ -148,63 +157,63 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\marble.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\marble.xnb</Output>
       <Time>2015-02-09T15:23:43.7974591-08:00</Time>
     </Item>
     <Item>
       <Source>100x100x100Brick.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\100x100x100Brick_0.xml</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\100x100x100Brick_0.xml</Output>
       <Time>2015-02-09T15:23:43.7173822-08:00</Time>
     </Item>
     <Item>
       <Source>100x50x100Marker.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\100x50x100Marker_0.xml</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\100x50x100Marker_0.xml</Output>
       <Time>2015-02-09T15:23:43.7093847-08:00</Time>
     </Item>
     <Item>
       <Source>boundingSphereV3.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\boundingSphereV3_0.xml</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\boundingSphereV3_0.xml</Output>
       <Time>2015-02-09T15:23:43.7333867-08:00</Time>
     </Item>
     <Item>
       <Source>cloudV3.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\cloudV3_0.xml</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\cloudV3_0.xml</Output>
       <Time>2015-02-09T15:23:43.7453837-08:00</Time>
     </Item>
     <Item>
       <Source>dogV6.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\dogV6_0.xml</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\dogV6_0.xml</Output>
       <Time>2015-02-09T15:23:43.7693857-08:00</Time>
     </Item>
     <Item>
       <Source>magentaAvatarV6.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\magentaAvatarV6_0.xml</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\magentaAvatarV6_0.xml</Output>
       <Time>2015-02-09T15:23:43.7893877-08:00</Time>
     </Item>
     <Item>
       <Source>redAvatarV6.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\redAvatarV6_0.xml</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\redAvatarV6_0.xml</Output>
       <Time>2015-02-09T15:23:43.8054394-08:00</Time>
     </Item>
     <Item>
       <Source>templeV3.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\templeV3_0.xml</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\templeV3_0.xml</Output>
       <Time>2015-02-09T15:23:43.8133918-08:00</Time>
     </Item>
     <Item>
@@ -220,7 +229,7 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\marble_0.xnb</Output>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\marble_0.xnb</Output>
       <Time>2015-02-09T15:23:43.7974591-08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -230,10 +239,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>PSM</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1Content\</RootDirectory>
-      <LoggerRootDirectory>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\</LoggerRootDirectory>
-      <IntermediateDirectory>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\obj\PSM\</IntermediateDirectory>
-      <OutputDirectory>c:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1\bin\PSM\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
