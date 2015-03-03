@@ -1,18 +1,16 @@
-/* 565 Spring 2014
- * Project 1: Models, terrain and treasures
- * 
- * Dipen Joshi <dipen.joshi.37@my.csun.edu>
- * Steven Wirsz <steven@wirsz.com>
- * Brandon Wollner <djcheshirewyw@gmail.com>
+/* Arnold Santos
+ * Cesar Zalzalah
+ * Dani Odicho
+ * Ernie Ledezma
  */
 
 /*  
-    Copyright (C) 2014 G. Michael Barnes
+     Copyright (C) 2015 G. Michael Barnes
  
-    The file NPAgent.cs is part of AGMGSKv5 a port of AGXNASKv4 from
-    XNA 4 refresh to MonoGames 3.0.6.
+    The file NPAgent.cs is part of AGMGSKv6 a port and update of AGXNASKv5 from
+    XNA 4 refresh to MonoGames 3.2.  
 
-    AGMGSKv5 is free software: you can redistribute it and/or modify
+    AGMGSKv6 is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -33,8 +31,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-#if ! __XNA4__  // when __XNA4__ == true build for MonoGames
-   using Microsoft.Xna.Framework.Storage; 
+#if MONOGAMES
+using Microsoft.Xna.Framework.Storage; 
 #endif
 using Microsoft.Xna.Framework.GamerServices;
 #endregion

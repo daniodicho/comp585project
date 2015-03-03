@@ -1,4 +1,8 @@
-/*  
+/* Arnold Santos
+ * Cesar Zalzalah
+ * Dani Odicho
+ * Ernie Ledezma
+
     Copyright (C) 2015 G. Michael Barnes
  
     The file Object3D.cs is part of AGMGSKv6 a port and update of AGXNASKv5 from

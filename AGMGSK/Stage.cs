@@ -1,9 +1,7 @@
-﻿/* 565 Spring 2014
- * Project 1: Models, terrain and treasures
- * 
- * Dipen Joshi <dipen.joshi.37@my.csun.edu>
- * Steven Wirsz <steven@wirsz.com>
- * Brandon Wollner <djcheshirewyw@gmail.com>
+﻿/* Arnold Santos
+ * Cesar Zalzalah
+ * Dani Odicho
+ * Ernie Ledezma
  */
 
 /*  
@@ -503,12 +501,8 @@ namespace AGMGSKv6
                new Vector3(490 * spacing, terrain.surfaceHeight(490, 475), 475 * spacing),
                new Vector3(0, 1, 0), 0.0f, "magentaAvatarV3", TreasureList);  // facing +Z
             //BMW
-            Model3D snowman = new Model3D(this, "snoman", "snoman");
-            snowman.IsCollidable = true;
-            snowman.addObject(new Vector3(450 * spacing, terrain.surfaceHeight(450, 450), 450 * spacing),
-                new Vector3(0, 1, 0), 0.0f);
-            Components.Add(snowman);
-            //npAgent.IsCollidable = true; // SW: Turn on NPC collisions
+            
+            npAgent.IsCollidable = false; // SW: Turn on NPC collisions
             Components.Add(npAgent);
             // ----------- CREATE OPTIONAL CONTENT HERE -----------------------
             // Load all optional content.  Content not requried by AGXNASK
@@ -525,19 +519,9 @@ namespace AGMGSKv6
             Random random = new Random();  // used for pack and cloud
 
             // create a Pack of dogs
-            Pack pack = new Pack(this, "dog", "snowplow");
+            Pack pack = new Pack(this, "dog", "snowplow", 5, 400,400,null);  //place the pack of aliens in (400,400)
             Components.Add(pack);
-            for (int x = -9; x < 10; x += 6)
-                for (int z = -3; z < 4; z += 6)
-                {
-                    float scale = (float)(0.7);
-                    float xPos = (440 + x) * spacing;  // position of pack
-                    float zPos = (440 + z) * spacing;
-                    pack.addObject(
-                       new Vector3(xPos, terrain.surfaceHeight((int)xPos / spacing, (int)zPos / spacing), zPos),
-                       new Vector3(0, 1, 0), 0.0f,
-                       new Vector3(scale, scale, scale));
-                }
+         
             // create some clouds
             //   Cloud cloud = new Cloud(this, "cloud", "squirrel");
             //   Components.Add(cloud);

@@ -41,3 +41,4 @@ C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\red
 C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\snoman.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\snowplow.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\squirrel.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\obj\PSM\GameName1.csprojResolveAssemblyReference.cache

@@ -1,4 +1,10 @@
-﻿#region Using Statements
+﻿/* Arnold Santos
+ * Cesar Zalzalah
+ * Dani Odicho
+ * Ernie Ledezma
+ */
+
+#region Using Statements
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
@@ -11,6 +17,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace AGMGSK
 {
+ 
     /// <summary>
     /// This is the main type for your game
     /// </summary>
