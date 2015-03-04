@@ -41,7 +41,7 @@ namespace AGMGSKv6 {
 public class Wall : Model3D {
 
 public Wall(Stage theStage, string label, string meshFile)  : base(theStage, label, meshFile) {
-   isCollidable = true;
+   isCollidable = false;
    int spacing = stage.Terrain.Spacing;
    Terrain terrain = stage.Terrain;
 	// brick[x,z] vertex positions on terrain

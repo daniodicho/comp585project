@@ -7,10 +7,13 @@
  *       for example:
  *       AAA-Barnes-P1.cs			for a group of one, Mike Barnes
  *       AAA-BarnesSmart-P1.cs	for a group of two, Mike Barnes and Iam Smart 
- *         group size > 1 list last names alphabetically
+ *       group size > 1 list last names alphabetically
  * 3.  Edit the last three lines in this comment appropriately
  * 
- * Group members:  Mike Barnes
+ * Group members:  Ernie Ledezma
+ *                 Dani Odicho
+ *                 Arnold Santos
+ *                 Cesar Zalzalah
  * Project 1
  * Spring 2015
  */

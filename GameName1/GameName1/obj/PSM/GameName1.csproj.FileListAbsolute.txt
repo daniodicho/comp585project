@@ -70,3 +70,5 @@ C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\IgnoreMe.dll
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\obj\PSM\GameName1.csprojResolveAssemblyReference.cache
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\obj\PSM\IgnoreMe.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\alien.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1\bin\PSM\Content\ufo.xnb

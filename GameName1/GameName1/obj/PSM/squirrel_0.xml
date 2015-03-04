@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>WORLD</Name>
     <Identity>
-      <SourceFilename>C:\Users\Frank\Desktop\comp585project\GameName1\GameName1Content\squirrel.x</SourceFilename>
+      <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1Content\squirrel.x</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -36,7 +36,7 @@
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Frank\Desktop\comp585project\GameName1\GameName1Content\squirrel.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\GameName1\GameName1Content\squirrel.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
