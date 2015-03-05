@@ -13,6 +13,8 @@ Content\redAvatarV3.xnb
 Content\snoman.xnb
 Content\snowplow.xnb
 Content\squirrel.xnb
+Content\alien.xnb
+Content\ufo.xnb
 Content\Consolas.xnb
 Content\CourierNew.xnb
 Content\colorTexture.xnb

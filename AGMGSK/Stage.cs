@@ -519,19 +519,18 @@ namespace AGMGSKv6
             Random random = new Random();  // used for pack and cloud
 
             // create a Pack of dogs
-            Pack pack = new Pack(this, "dog", "snowplow", 5, 400,400,null);  //place the pack of aliens in (400,400)
+            Pack pack = new Pack(this, "dog", "alien", 5, 400,400,null);  //place the pack of aliens in (400,400)
             Components.Add(pack);
          
-            // create some clouds
-            //   Cloud cloud = new Cloud(this, "cloud", "squirrel");
-            //   Components.Add(cloud);
-            // add 9 cloud instances
-            //   for (int x = range / 4; x < range; x += (range / 4))
-            //    for (int z = range / 4; z < range; z += (range / 4))
-            //     cloud.addObject(
-            //      new Vector3(x * spacing, terrain.surfaceHeight(x, z) + 2000, z * spacing),
-            //    new Vector3(0, 1, 0), 0.0f,
-            //  new Vector3(random.Next(3) + 1, random.Next(3) + 1, random.Next(3) + 1));
+ 
+               Cloud cloud = new Cloud(this, "cloud", "ufo", 15);
+               Components.Add(cloud);
+               for (int x = range / 4; x < range; x += (range / 4))
+                for (int z = range / 4; z < range; z += (range / 4))
+                 cloud.addObject(
+                  new Vector3(x * spacing, terrain.surfaceHeight(x, z) + 2000, z * spacing),
+                new Vector3(0, 1, 0), 0.0f,
+              new Vector3(random.Next(3) + 1, random.Next(3) + 1, random.Next(3) + 1));
             // ----------- end of optional content
 
             // Set initial camera and projection matrix
