@@ -356,39 +356,52 @@ namespace AGMGSKv6
             return terrain.surfaceHeight((int)x / spacing, (int)z / spacing);
         }
 
-        // SW Modified by Brandon & Dipen
+        // Arnold
         public void setSurfaceHeight(Object3D anObject3D)
         {
             Vector3 aPos = anObject3D.Translation;
-            Vector3 A, B, C, D;
-            float xy, zy;
-            float terrainHeight = terrain.surfaceHeight((int)(anObject3D.Translation.X / spacing),
+            Vector3 A, B, C, D;    // 4 points that represent box bounded by object and terrain
+            float heightA, heightB, heightC, heightD;      // height values for the 4 points
+            float xy, zy;       // Y difference on X and Z
+            float terrainHeight = terrain.surfaceHeight((int)(aPos.X / spacing),
                 (int)(anObject3D.Translation.Z / spacing));
-            A = B = C = D = new Vector3(aPos.X / spacing, terrainHeight, aPos.Z / spacing);
-            B.X = A.X + spacing;
-            C.Z = A.Z + spacing;
-            D.X = A.X + spacing;
-            D.Z = A.Z + spacing;
 
-            //
-            //float AtoObj = (aPos.X - A.X) +(aPos.Z -A.Z);
-            //float DtoObj = (D.X - aPos.X) + (D.Z -aPos.Z);
+            //Determine the heights of the box from the ratio of object poition divided by spacing and having distance +1 from neighboring point
+            heightA = terrain.surfaceHeight((int)(aPos.X / spacing), (int)(aPos.Z / spacing));
+            heightB = terrain.surfaceHeight((int)(aPos.X / spacing) + 1, (int)(aPos.Z / spacing));
+            heightC = terrain.surfaceHeight((int)(aPos.X / spacing), (int)(aPos.Z / spacing) + 1);
+            heightD = terrain.surfaceHeight((int)(aPos.X / spacing) + 1, (int)(aPos.Z/ spacing) + 1);
+            
+            // Create vector3 Objects for the points of the box
+            A = new Vector3((int)(aPos.X / spacing)*spacing, heightA, (int)(aPos.Z / spacing)*spacing);
+            B = new Vector3((int)(aPos.X / spacing)*spacing + spacing, heightB, (int)(aPos.Z / spacing)*spacing);
+            C = new Vector3((int)(aPos.X / spacing)*spacing, heightC, (int)(aPos.Z / spacing)*spacing + spacing);
+            D = new Vector3((int)(aPos.X / spacing)*spacing + spacing, heightD, (int)(aPos.Z / spacing) * spacing + spacing);
 
-            if ((aPos.X + aPos.Y) <= spacing)
+
+            
+
+            // interpolate avatarPosition if object is in top surface
+            if (Vector3.Distance(A,aPos)<Vector3.Distance(D,aPos))
             {
                 xy = Vector3.Lerp(A, B, ((float)(aPos.X - A.X)) / spacing).Y - A.Y;
                 zy = Vector3.Lerp(A, C, ((float)(aPos.Z - A.Z)) / spacing).Y - A.Y;
+                aPos.Y = A.Y + xy + zy;
             }
+            // interpolate avatarPosition if object is in bottom surface
             else
             {
                 xy = Vector3.Lerp(D, C, ((float)(D.X - aPos.X)) / spacing).Y - D.Y;
                 zy = Vector3.Lerp(D, B, ((float)(D.Z - aPos.Z)) / spacing).Y - D.Y;
+                aPos.Y = D.Y + xy + zy;
+
             }
-            aPos.Y = A.Y + xy + zy;
 
-            anObject3D.Translation = new Vector3(anObject3D.Translation.X,
-                aPos.Y, anObject3D.Translation.Z);
+            // Position the object properly on the terrain
+           anObject3D.Translation = new Vector3(aPos.X,
+                aPos.Y, aPos.Z);
 
+          
         }
 
         public void setBlendingState(bool state)
