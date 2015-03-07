@@ -1,8 +1,8 @@
-﻿/* Arnold Santos
- * Cesar Zalzalah
- * Dani Odicho
- * Ernie Ledezma
- */
+﻿/* Arnold Santos   <arnold2020@yahoo.com>
+ * Cesar Zalzalah  <7701707@gmail.com>
+ * Dani Odicho     <dannykaka2009@hotmail.com>
+ * Ernie Ledezma   <eledezma518@gmail.com>
+ 
 
 /*  
     Copyright (C) 2015 G. Michael Barnes
@@ -359,7 +359,7 @@ namespace AGMGSKv6
         // Arnold
         public void setSurfaceHeight(Object3D anObject3D)
         {
-            Vector3 aPos = anObject3D.Translation;
+            Vector3 aPos = anObject3D.Translation;  // position of object
             Vector3 A, B, C, D;    // 4 points that represent box bounded by object and terrain
             float heightA, heightB, heightC, heightD;      // height values for the 4 points
             float xy, zy;       // Y difference on X and Z

@@ -107,10 +107,21 @@ namespace AGMGSKv6
                 if (distance <= tagDistance && t.Tag == false)
                 {
                     IncTreasures++; // increment number of treasures that the agent has found
-                    t.ChangeImg("treasure3");
                     t.Tag = true; // set treasure as found 
+                    t.IsCollidable = false;
+                    playSound("C:\\Users\\Dani\\Desktop\\noTreasure.wav");
+                    t.Update(gameTime);
                 }
             }
         }
+        private void playSound(string path)
+        {
+            System.Media.SoundPlayer player =
+                new System.Media.SoundPlayer();
+            player.SoundLocation = path;
+            player.Load();
+            player.Play();
+        }
     }
+
 }

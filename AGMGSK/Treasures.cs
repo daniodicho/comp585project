@@ -1,8 +1,7 @@
-﻿/* Arnold Santos
- * Cesar Zalzalah
- * Dani Odicho
- * Ernie Ledezma
- */
+﻿/* Arnold Santos   <arnold2020@yahoo.com>
+ * Cesar Zalzalah  <7701707@gmail.com>
+ * Dani Odicho     <dannykaka2009@hotmail.com>
+ * Ernie Ledezma   <eledezma518@gmail.com>
 /*  
     Copyright (C) 2015 G. Michael Barnes
  
@@ -37,21 +36,22 @@ using Microsoft.Xna.Framework.Storage;
 
 namespace AGMGSKv6
 {
-    public class Treasures : Model3D
+    public class Treasures : MovableModel3D
     {
-        private NavNode node = null; // SW embedded NavNode within the treasure model object
-        private bool tag; // SW If this is a treasure, found or not
+        private NavNode node = null; // nav node needed for the treasue
+        private bool tag; // indicates whether the treasure was tagged
 
         // Constructor
         public Treasures(Stage theStage, string label, string fileOfModel, int x, int z)
             : base (theStage, label, fileOfModel) 
         {
-            int spacing = stage.Spacing; // sets nav point
+            int spacing = stage.Spacing; // sets the spacing of nav point
             node = new NavNode(new Vector3(x * spacing, stage.Terrain.surfaceHeight(x, z), z * spacing),
                 NavNode.NavNodeEnum.TREASURE);
 
             addObject(new Vector3(x * spacing, stage.Terrain.surfaceHeight(x, z), z * spacing),
-                new Vector3(0, 1, 0), 0.79f); // adds treasure object to the screen
+                new Vector3(0, 1, 0), 0.79f); // add treasure object to the level
+
         }
 
         // Methods
@@ -61,7 +61,7 @@ namespace AGMGSKv6
             set { node = value; }
         }
 
-        public bool Tag // SW used to set treasure found true or false
+        public bool Tag //set tage to true when tagged
         {
             get { return tag; }
             set { tag = value; }
@@ -70,6 +70,21 @@ namespace AGMGSKv6
         public void ChangeImg(string label) // SW Load a new mesh for the treasure model
         {
             model = stage.Content.Load<Model>(label);
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            if (tag)
+            {
+                foreach (Object3D obj in instance)
+                {
+                    obj.Step = 0;
+                    obj.Yaw = 0;
+                    obj.Step+=5;
+                    obj.updateMovableObject();
+                }
+                base.Update(gameTime);
+            }
         }
     }
 }
