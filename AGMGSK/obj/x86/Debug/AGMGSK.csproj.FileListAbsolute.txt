@@ -138,3 +138,4 @@ C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D9
 C:\Users\Frank\Desktop\comp585project\AGMGSK\obj\x86\Debug\AGMGSK.csprojResolveAssemblyReference.cache
 C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\alien.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\ufo.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\gold.xnb

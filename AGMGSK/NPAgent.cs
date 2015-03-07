@@ -235,12 +235,23 @@ namespace AGMGSKv6
                             IncTreasures++; // increment number of treasures that the NP agent has found
 
                             t.Tag = true; // set treasure as found
-                            t.ChangeImg("treasure3");
+                            t.IsCollidable = false;
+                            String dir = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName;
+                            playSound(dir+"\\noTreasure.wav");
+                            t.Update(gameTime);
                         }
                     }
                 }
             }
             base.Update(gameTime);  // Agent's Update();
+        }
+        private void playSound(string path)
+        {
+            System.Media.SoundPlayer player =
+                new System.Media.SoundPlayer();
+            player.SoundLocation = path;
+            player.Load();
+            player.Play();
         }
     }
 }

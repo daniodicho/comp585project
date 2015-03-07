@@ -22,3 +22,4 @@ Content\heightTexture.xnb
 Content\inspectorBackground.xnb
 Content\marble.xnb
 Content\marble_0.xnb
+Content\gold.xnb

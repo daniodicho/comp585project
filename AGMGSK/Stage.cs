@@ -356,7 +356,7 @@ namespace AGMGSKv6
             return terrain.surfaceHeight((int)x / spacing, (int)z / spacing);
         }
 
-        // Arnold
+        // Modified by Arnold + Dani
         public void setSurfaceHeight(Object3D anObject3D)
         {
             Vector3 aPos = anObject3D.Translation;  // position of object
@@ -491,12 +491,12 @@ namespace AGMGSKv6
             terrain = new Terrain(this, "terrain", "heightTexture", "colorTexture");
             Components.Add(terrain);
 
-            // SW create treasures 1-4
+            // SW create treasures 1-4 (modified by Ernie)
             TreasureList = new List<Treasures>();
-            TreasureList.Add(new Treasures(this, "treasure", "treasure2", 480, 480));
-            TreasureList.Add(new Treasures(this, "treasure", "treasure2", 465, 505));
-            TreasureList.Add(new Treasures(this, "treasure", "treasure2", 465, 481));
-            TreasureList.Add(new Treasures(this, "treasure", "treasure2", 505, 465));
+            TreasureList.Add(new Treasures(this, "treasure", "gold", 400, 400));
+            TreasureList.Add(new Treasures(this, "treasure", "gold", 475, 490));
+            TreasureList.Add(new Treasures(this, "treasure", "gold", 435, 471));
+            TreasureList.Add(new Treasures(this, "treasure", "gold", 500, 425));
 
             foreach (Treasures t in TreasureList) // SW traverse through all treasures and marked non-collideable and add them to the scene
             {

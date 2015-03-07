@@ -109,7 +109,8 @@ namespace AGMGSKv6
                     IncTreasures++; // increment number of treasures that the agent has found
                     t.Tag = true; // set treasure as found 
                     t.IsCollidable = false;
-                    playSound("C:\\Users\\Dani\\Desktop\\noTreasure.wav");
+                    String dir = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName;
+                    playSound(dir + "\\noTreasure.wav");
                     t.Update(gameTime);
                 }
             }
