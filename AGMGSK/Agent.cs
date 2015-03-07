@@ -1,8 +1,7 @@
-/* Arnold Santos
- * Cesar Zalzalah
- * Dani Odicho
- * Ernie Ledezma
- */
+/* Arnold Santos   <arnold2020@yahoo.com>
+ * Cesar Zalzalah  <7701707@gmail.com>
+ * Dani Odicho     <dannykaka2009@hotmail.com>
+ * Ernie Ledezma   <eledezma518@gmail.com>
 
 /*  Copyright (C) 2015 G. Michael Barnes
  
@@ -53,7 +52,7 @@ public abstract class Agent : MovableModel3D {
    protected Object3D agentObject = null;
    protected Camera agentCamera, first, follow, above;
    public enum CameraCase { FirstCamera, FollowCamera, AboveCamera }
-   protected int treasures;  // SW number of treasures found by this agent
+   protected int treasures;  // SW number of treasures found by agent
 
    /// <summary>
    /// Create an Agent.
@@ -93,7 +92,7 @@ public abstract class Agent : MovableModel3D {
   }
 
    // get and set for # of treasures
-   public int IncTreasures
+   public int Treasures
    {
        get { return treasures; }
        set { treasures = value; }

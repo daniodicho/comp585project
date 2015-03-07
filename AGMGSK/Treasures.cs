@@ -4,9 +4,6 @@
  * Ernie Ledezma   <eledezma518@gmail.com>
 /*  
     Copyright (C) 2015 G. Michael Barnes
- 
-    The file Terrain.cs is part of AGMGSKv6 a port and update of AGXNASKv5 from
-    XNA 4 refresh to MonoGames 3.2.  
 
     AGMGSKv6 is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -50,11 +47,10 @@ namespace AGMGSKv6
                 NavNode.NavNodeEnum.TREASURE);
 
             addObject(new Vector3(x * spacing, stage.Terrain.surfaceHeight(x, z), z * spacing),
-                new Vector3(0, 1, 0), 0.79f); // add treasure object to the level
+                new Vector3(0, 1, 0), 0.75f); // add treasure object to the above the terrain
 
         }
 
-        // Methods
         public NavNode Node // SW used extract NavNode from a Treasure
         {
             get { return node; }
@@ -67,11 +63,7 @@ namespace AGMGSKv6
             set { tag = value; }
         }
 
-        public void ChangeImg(string label) // SW Load a new mesh for the treasure model
-        {
-            model = stage.Content.Load<Model>(label);
-        }
-
+        //Moves the treasure to the other end of the terrain
         public override void Update(GameTime gameTime)
         {
             if (tag)
@@ -79,7 +71,6 @@ namespace AGMGSKv6
                 foreach (Object3D obj in instance)
                 {
                     obj.Step = 0;
-                    obj.Yaw = 0;
                     obj.Step+=5;
                     obj.updateMovableObject();
                 }

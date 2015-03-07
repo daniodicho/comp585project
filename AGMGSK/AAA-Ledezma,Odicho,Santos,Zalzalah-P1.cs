@@ -1,19 +1,8 @@
-/*
- * Program.cs is the starting point for AGMGSK applications.
+/* Arnold Santos   <arnold2020@yahoo.com>
+ * Cesar Zalzalah  <7701707@gmail.com>
+ * Dani Odicho     <dannykaka2009@hotmail.com>
+ * Ernie Ledezma   <eledezma518@gmail.com>
  * 
- * You should:
- * 1.  Delete the files game1.cs and program1.cs from your project
- * 2.  Rename this AAA-<group last name(s)>-<project number>.cs
- *       for example:
- *       AAA-Barnes-P1.cs			for a group of one, Mike Barnes
- *       AAA-BarnesSmart-P1.cs	for a group of two, Mike Barnes and Iam Smart 
- *       group size > 1 list last names alphabetically
- * 3.  Edit the last three lines in this comment appropriately
- * 
- * Group members:  Ernie Ledezma
- *                 Dani Odicho
- *                 Arnold Santos
- *                 Cesar Zalzalah
  * Project 1
  * Spring 2015
  */

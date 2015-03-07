@@ -1,7 +1,7 @@
-/* Arnold Santos
- * Cesar Zalzalah
- * Dani Odicho
- * Ernie Ledezma
+/* Arnold Santos   <arnold2020@yahoo.com>
+ * Cesar Zalzalah  <7701707@gmail.com>
+ * Dani Odicho     <dannykaka2009@hotmail.com>
+ * Ernie Ledezma   <eledezma518@gmail.com>
   
     Copyright (C) 2015 G. Michael Barnes
  
@@ -55,7 +55,7 @@ namespace AGMGSKv6
         private int rotate;
         private float angle;
         private Matrix initialOrientation;
-        private int tagDistance = 500; // SW Distance to detect player tagging a treasure
+        private int tagDistance = 200; // SW Distance to detect player tagging a treasure
         protected List<Treasures> TreasureList = null; // SW stores passed list of treasures from stage
 
         public Player(Stage theStage, string label, Vector3 pos, Vector3 orientAxis,
@@ -106,16 +106,15 @@ namespace AGMGSKv6
                     new Vector3(agentObject.Translation.X, 0, agentObject.Translation.Z));
                 if (distance <= tagDistance && t.Tag == false)
                 {
-                    IncTreasures++; // increment number of treasures that the agent has found
+                    Treasures++; // increment number of treasures that the agent has found
                     t.Tag = true; // set treasure as found 
-                    t.IsCollidable = false;
-                    String dir = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName;
-                    playSound(dir + "\\noTreasure.wav");
-                    t.Update(gameTime);
+                    String dir = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName;    //directory to retrieve sound file
+                    playSound(dir + "\\noTreasure.wav");          //play sound effect
+                    t.Update(gameTime);                           //makes treasure run away
                 }
             }
         }
-        private void playSound(string path)
+        private void playSound(string path)         //plays a sound file
         {
             System.Media.SoundPlayer player =
                 new System.Media.SoundPlayer();

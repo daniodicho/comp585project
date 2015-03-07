@@ -2,8 +2,6 @@
  * Cesar Zalzalah  <7701707@gmail.com>
  * Dani Odicho     <dannykaka2009@hotmail.com>
  * Ernie Ledezma   <eledezma518@gmail.com>
- 
-
 /*  
     Copyright (C) 2015 G. Michael Barnes
  
@@ -356,7 +354,6 @@ namespace AGMGSKv6
             return terrain.surfaceHeight((int)x / spacing, (int)z / spacing);
         }
 
-        // Modified by Arnold + Dani
         public void setSurfaceHeight(Object3D anObject3D)
         {
             Vector3 aPos = anObject3D.Translation;  // position of object
@@ -585,11 +582,11 @@ namespace AGMGSKv6
                 inspector.setInfo(11,
                    string.Format("Player:   Location ({0,5:f0},{1,3:f0},{2,5:f0})  Looking at ({3,5:f2},{4,5:f2},{5,5:f2})  Treasures {6}",
                    player.AgentObject.Translation.X, player.AgentObject.Translation.Y, player.AgentObject.Translation.Z,
-                   player.AgentObject.Forward.X, player.AgentObject.Forward.Y, player.AgentObject.Forward.Z, player.IncTreasures));
+                   player.AgentObject.Forward.X, player.AgentObject.Forward.Y, player.AgentObject.Forward.Z, player.Treasures));
                 inspector.setInfo(12,
                    string.Format("npAgent:  Location ({0,5:f0},{1,3:f0},{2,5:f0})  Looking at ({3,5:f2},{4,5:f2},{5,5:f2})  Treasures {6}  Path Mode {7}",
                    npAgent.AgentObject.Translation.X, npAgent.AgentObject.Translation.Y, npAgent.AgentObject.Translation.Z,
-                   npAgent.AgentObject.Forward.X, npAgent.AgentObject.Forward.Y, npAgent.AgentObject.Forward.Z, npAgent.IncTreasures, pathMode));
+                   npAgent.AgentObject.Forward.X, npAgent.AgentObject.Forward.Y, npAgent.AgentObject.Forward.Z, npAgent.Treasures, pathMode));
                 inspector.setMatrices("player", "npAgent", player.AgentObject.Orientation, npAgent.AgentObject.Orientation);
             }
 
