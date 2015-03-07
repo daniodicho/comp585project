@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>WORLD</Name>
     <Identity>
-      <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\treasure3.x</SourceFilename>
+      <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\treasure3.x</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -111,7 +111,7 @@
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\treasure3.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\treasure3.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -124,7 +124,7 @@
     </Resource>
     <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\treasure3.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\treasure3.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -137,7 +137,7 @@
     </Resource>
     <Resource ID="#Resource3" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\treasure3.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\treasure3.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -150,7 +150,7 @@
     </Resource>
     <Resource ID="#Resource4" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\treasure3.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\treasure3.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>

@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>WORLD</Name>
     <Identity>
-      <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+      <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -385,7 +385,7 @@
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -398,7 +398,7 @@
     </Resource>
     <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -411,7 +411,7 @@
     </Resource>
     <Resource ID="#Resource3" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -424,7 +424,7 @@
     </Resource>
     <Resource ID="#Resource4" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -437,7 +437,7 @@
     </Resource>
     <Resource ID="#Resource5" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -450,7 +450,7 @@
     </Resource>
     <Resource ID="#Resource6" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -463,7 +463,7 @@
     </Resource>
     <Resource ID="#Resource7" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -476,7 +476,7 @@
     </Resource>
     <Resource ID="#Resource8" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -489,7 +489,7 @@
     </Resource>
     <Resource ID="#Resource9" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -502,7 +502,7 @@
     </Resource>
     <Resource ID="#Resource10" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -515,7 +515,7 @@
     </Resource>
     <Resource ID="#Resource11" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -528,7 +528,7 @@
     </Resource>
     <Resource ID="#Resource12" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -541,7 +541,7 @@
     </Resource>
     <Resource ID="#Resource13" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -554,7 +554,7 @@
     </Resource>
     <Resource ID="#Resource14" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -567,7 +567,7 @@
     </Resource>
     <Resource ID="#Resource15" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -580,7 +580,7 @@
     </Resource>
     <Resource ID="#Resource16" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1Content\gold.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1Content\gold.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
