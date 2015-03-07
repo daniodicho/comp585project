@@ -73,7 +73,6 @@ namespace AGMGSKv6
         protected Model boundingSphere3D;    // a  bounding sphere model
         protected Model wayPoint3D;          // a way point marker -- for paths.
         protected Model treasure3D;          // SW: a treasure marker
-        protected Model treasure2;          // SW: an alternate treasure marker (found)
         protected bool drawBoundingSpheres = false;
         protected bool fog = false;
         protected bool fixedStepRendering = true;     // 60 updates / second
@@ -481,8 +480,8 @@ namespace AGMGSKv6
             camera.Add(topDownCamera);
             boundingSphere3D = Content.Load<Model>("boundingSphereV3");
             wayPoint3D = Content.Load<Model>("100x50x100Marker");
-            treasure3D = Content.Load<Model>("treasure2"); // SW model for a treasure object
-            treasure2 = Content.Load<Model>("treasure3"); // SW alternate model for a tagged treasure
+            treasure3D = Content.Load<Model>("gold"); // SW model for a treasure object
+           // treasure2 = Content.Load<Model>("treasure3"); // SW alternate model for a tagged treasure
             // Create required entities:  
             collidable = new List<Object3D>();
             terrain = new Terrain(this, "terrain", "heightTexture", "colorTexture");
@@ -641,7 +640,7 @@ namespace AGMGSKv6
         {
             draws++;
             display.Viewport = defaultViewport; //sceneViewport;
-            display.Clear(Color.CornflowerBlue);
+            display.Clear(Color.Black);
             // Draw into inspectorViewport
             display.Viewport = inspectorViewport;
             spriteBatch.Begin();

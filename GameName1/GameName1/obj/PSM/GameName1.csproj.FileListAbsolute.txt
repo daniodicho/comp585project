@@ -81,13 +81,8 @@ C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Conten
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\magentaAvatarV6.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\redAvatarV6.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\templeV3.xnb
-C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\treasure2.xnb
-C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\treasure3.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\magentaAvatarV3.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\redAvatarV3.xnb
-C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\snoman.xnb
-C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\snowplow.xnb
-C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\squirrel.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\alien.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\ufo.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\gold.xnb
@@ -96,7 +91,6 @@ C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Conten
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\colorTexture.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\heightTexture.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\inspectorBackground.xnb
-C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\marble.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\Content\marble_0.xnb
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\bin\PSM\IgnoreMe.dll
 C:\Users\Dani\Downloads\comp585project-master\GameName1\GameName1\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
@@ -109,13 +103,8 @@ C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\magentaAvatarV6.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\redAvatarV6.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\templeV3.xnb
-C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\treasure2.xnb
-C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\treasure3.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\magentaAvatarV3.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\redAvatarV3.xnb
-C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\snoman.xnb
-C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\snowplow.xnb
-C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\squirrel.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\alien.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\ufo.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\gold.xnb
@@ -124,7 +113,6 @@ C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\colorTexture.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\heightTexture.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\inspectorBackground.xnb
-C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\marble.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\Content\marble_0.xnb
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\bin\PSM\IgnoreMe.dll
 C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\GameName1\GameName1\obj\PSM\GameName1.csprojResolveAssemblyReference.cache
