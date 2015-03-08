@@ -493,10 +493,10 @@ namespace AGMGSKv6
 
             // SW create treasures 1-4
             TreasureList = new List<Treasures>();
-            TreasureList.Add(new Treasures(this, "treasure", "treasure2", 480, 480));
-            TreasureList.Add(new Treasures(this, "treasure", "treasure2", 465, 505));
-            TreasureList.Add(new Treasures(this, "treasure", "treasure2", 465, 481));
-            TreasureList.Add(new Treasures(this, "treasure", "treasure2", 505, 465));
+            TreasureList.Add(new Treasures(this, "treasure", "gold", 480, 480));
+            TreasureList.Add(new Treasures(this, "treasure", "gold", 465, 505));
+            TreasureList.Add(new Treasures(this, "treasure", "gold", 465, 481));
+            TreasureList.Add(new Treasures(this, "treasure", "gold", 505, 465));
 
             foreach (Treasures t in TreasureList) // SW traverse through all treasures and marked non-collideable and add them to the scene
             {
