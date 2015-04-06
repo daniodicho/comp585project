@@ -109,9 +109,14 @@ namespace AGMGSKv6
         protected List<Treasures> TreasureList = null; // SW list object of all treasures
 
         protected List<Object3D> collidable = null;
+        protected List<Object3D> avoidable = null; // list of all objects that are avoided
+
         // Screen display information variables
         protected double fpsSecond;
         protected int draws, updates;
+        protected bool drawCollisionSpheres = false; // check when collision spheres are drawn
+        protected int sensorData = 0;
+
 
         /// <summary>
         /// Set the Scene.
@@ -281,6 +286,29 @@ namespace AGMGSKv6
                 yonFlag = value;
                 if (yonFlag) setProjection(yon);
                 else setProjection(farYon);
+            }
+        }
+        public bool DrawCollisionSpheres // SW2 designate if collision spheres are shown on the screen or not
+        {
+            get
+            {
+                return drawCollisionSpheres;
+            }
+            set
+            {
+                drawCollisionSpheres = value;
+            }
+        }
+
+        public int SensorData // SW2 used to show active collision sensors on the inspector window
+        {
+            get
+            {
+                return sensorData;
+            }
+            set
+            {
+                sensorData = value;
             }
         }
 
@@ -620,6 +648,8 @@ namespace AGMGSKv6
             {
                 npAgent.ChangePath();
             }
+            else if (keyboardState.IsKeyDown(Keys.Z) && !oldKeyboardState.IsKeyDown(Keys.Z))
+                drawCollisionSpheres = !drawCollisionSpheres;
             // toggle update speed between FixedStep and ! FixedStep
             else if (keyboardState.IsKeyDown(Keys.T) && !oldKeyboardState.IsKeyDown(Keys.T))
                 FixedStepRendering = !FixedStepRendering;

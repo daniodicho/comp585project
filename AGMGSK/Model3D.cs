@@ -50,12 +50,17 @@ public class Model3D : DrawableGameComponent {
    protected Stage stage;
    protected Model model = null; 
    protected bool isCollidable = false;  // Model3Ds must explicitly set true to test collisions
+   public bool isAvoidable = false;
    // Model3D's mesh BoundingSphere values
    protected Vector3 boundingSphereCenter;
    protected float boundingSphereRadius = 0.0f;  
    protected Matrix boundingSphereWorld;
    // Model3D's object instance collection 
    protected List<Object3D> instance;
+
+   public Vector3 collisionSphereCenter; // SW2 similar values to bounding spheres
+   public float collisionSphereRadius = 0.0f;
+   public Matrix collisionSphereWorld;
 
 	public Model3D(Stage theStage, string label, string fileOfModel) : base (theStage) { 
 		name = label;

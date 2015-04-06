@@ -49,6 +49,7 @@ namespace AGMGSKv6
 /// 1/25/2012 last changed
 /// </summary>
 public abstract class Agent : MovableModel3D {
+   bool stop = false; //check if NPC stops moving
    protected Object3D agentObject = null;
    protected Camera agentCamera, first, follow, above;
    public enum CameraCase { FirstCamera, FollowCamera, AboveCamera }
@@ -114,7 +115,8 @@ public abstract class Agent : MovableModel3D {
       agentCamera.updateViewMatrix();
       }
       
-   public override void Update(GameTime gameTime) { 
+   public override void Update(GameTime gameTime) {
+      if(!stop)
       agentObject.updateMovableObject();
       base.Update(gameTime); 
       // Agent is in correct (X,Z) position on the terrain 
