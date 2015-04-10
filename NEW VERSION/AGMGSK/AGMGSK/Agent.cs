@@ -1,5 +1,10 @@
-/*  
-    Copyright (C) 2015 G. Michael Barnes a
+/* Arnold Santos   <arnold2020@yahoo.com>
+ * Cesar Zalzalah  <7701707@gmail.com>
+ * Dani Odicho     <dannykaka2009@hotmail.com>
+ * Ernie Ledezma   <eledezma518@gmail.com>
+/*
+    
+    Copyright (C) 2015 G. Michael Barnes
  
     The file Agent.cs is part of AGMGSKv6 a port and update of AGXNASKv5 from
     XNA 4 refresh to MonoGames 3.2.  

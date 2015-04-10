@@ -1,3 +1,7 @@
+/* Arnold Santos   <arnold2020@yahoo.com>
+ * Cesar Zalzalah  <7701707@gmail.com>
+ * Dani Odicho     <dannykaka2009@hotmail.com>
+ * Ernie Ledezma   <eledezma518@gmail.com>
 /*  
     Copyright (C) 2015 G. Michael Barnes
  
@@ -114,6 +118,27 @@ public class NPAgent : Agent {
                nextGoal = path.NextNode;
                // agentObject.turnToFace(nextGoal.Translation);
            }
+           float distanceToTreasure=9999;
+           float minDistance = 9999;
+           foreach (Treasures t in TreasureList) // SW check to see if the NPAgent is close to any treasure
+           {
+               if (!t.Tag) // only examine treasure if it is not tagged
+               {
+                   NavNode nav = t.Node; // extract NavNode from Treasure Class
+                   
+                     distanceToTreasure = Vector3.Distance(
+                      new Vector3(nav.Translation.X, 0, nav.Translation.Z),
+                      new Vector3(agentObject.Translation.X, 0, agentObject.Translation.Z));
+                     if (distanceToTreasure < minDistance)
+                     {
+                         minDistance = distanceToTreasure;
+                     }
+               }
+           }
+           if ((minDistance <= 4000) && (stage.pathMode))
+           {
+               changePath();
+           }
        }
            else // SW treasure mode
             {
@@ -137,6 +162,7 @@ public class NPAgent : Agent {
                         float distance = Vector3.Distance(
                            new Vector3(nav.Translation.X, 0, nav.Translation.Z),
                            new Vector3(agentObject.Translation.X, 0, agentObject.Translation.Z));
+                        
                         if (distance <= snapDistance)
                         {
                             turn = true; // Turn to next treasure on next pass
