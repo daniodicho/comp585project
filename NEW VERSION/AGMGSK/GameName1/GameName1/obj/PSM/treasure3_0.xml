@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:NodeContent">
+    <Name>WORLD</Name>
+    <Identity>
+      <SourceFilename>C:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1Content\treasure3.x</SourceFilename>
+      <SourceTool>XImporter</SourceTool>
+    </Identity>
+    <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+    <Children>
+      <Child>
+        <Name>sphere</Name>
+        <Transform>1 0 0 0 0 1 0 0 0 0 1 0 126.447 24.8891 -0.052188 1</Transform>
+        <Children>
+          <Child Type="Graphics:MeshContent">
+            <Name>sphere</Name>
+            <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+            <Positions>0 0 -0.006753 0 0 0 0 0 -0.011697 0 0 -0.013507 0 0 0.006753 0 0 0.011697 0 0 0.013507</Positions>
+            <Geometry>
+              <Batch>
+                <Material>#Resource1</Material>
+                <Indices>0 1 1 2 0 1 3 2 1 2 3 1 0 2 1 1 0 1 4 1 1 5 4 1 6 5 1 5 6 1 4 5 1 1 4 1 1 0 1 0 2 1 2 3 1 3 2 1 2 0 1 0 1 1 1 4 1 4 5 1 5 6 1 6 5 1 5 4 1 4 1 1</Indices>
+                <Vertices>
+                  <PositionIndices>0 1 2 3 4 5 6</PositionIndices>
+                  <Channels>
+                    <VertexChannel Name="Normal0" ElementType="Framework:Vector3">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</VertexChannel>
+                  </Channels>
+                </Vertices>
+              </Batch>
+            </Geometry>
+          </Child>
+        </Children>
+      </Child>
+      <Child>
+        <Name>sphere</Name>
+        <Transform>1 0 0 0 0 1 0 0 0 0 1 0 -1.64698 -0.104868 -0.052188 1</Transform>
+        <Children>
+          <Child Type="Graphics:MeshContent">
+            <Name>sphere</Name>
+            <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+            <Positions>0 0 0.006753 0 0 0 0 0 0.011697 0 0 0.013507 0 0 -0.006753 0 0 -0.011697 0 0 -0.013507</Positions>
+            <Geometry>
+              <Batch>
+                <Material>#Resource2</Material>
+                <Indices>0 1 1 2 0 1 3 2 1 2 3 1 0 2 1 1 0 1 4 1 1 5 4 1 6 5 1 5 6 1 4 5 1 1 4 1 1 0 1 0 2 1 2 3 1 3 2 1 2 0 1 0 1 1 1 4 1 4 5 1 5 6 1 6 5 1 5 4 1 4 1 1</Indices>
+                <Vertices>
+                  <PositionIndices>0 1 2 3 4 5 6</PositionIndices>
+                  <Channels>
+                    <VertexChannel Name="Normal0" ElementType="Framework:Vector3">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</VertexChannel>
+                  </Channels>
+                </Vertices>
+              </Batch>
+            </Geometry>
+          </Child>
+        </Children>
+      </Child>
+      <Child>
+        <Name>group</Name>
+        <Transform>1 0 0 0 0 1 0 0 0 0 1 0 280.492 177.625 -22.5293 1</Transform>
+        <Children>
+          <Child>
+            <Name>rect</Name>
+            <Transform>1 0 0 0 0 1 0 0 0 0 1 0 -1.05264 81.3774 16.8807 1</Transform>
+            <Children>
+              <Child Type="Graphics:MeshContent">
+                <Name>rect</Name>
+                <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+                <Positions>147.621 74.9856 -136.318 -147.621 74.9856 -136.318 139.046 96.6826 -136.383 -156.196 96.6826 -136.383 139.046 -53.2882 136.253 147.621 -74.9855 136.318 -147.621 -74.9855 136.318 -156.196 -53.2882 136.253</Positions>
+                <Geometry>
+                  <Batch>
+                    <Material>#Resource3</Material>
+                    <Indices>0 1 2 3 2 1 4 5 6 7 6 5 8 9 10 11 10 9 12 13 14 15 14 13</Indices>
+                    <Vertices>
+                      <PositionIndices>0 1 2 3 2 4 0 5 5 4 6 7 2 3 4 7</PositionIndices>
+                      <Channels>
+                        <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0 -0.00299199857 -0.9999955 0 -0.00299199857 -0.9999955 0 -0.00299199857 -0.9999955 0 -0.00299199857 -0.9999955 0.911308765 0.36074692 0.198438957 0.911308765 0.36074692 0.198438957 0.911308765 0.36074692 0.198438957 0.911308765 0.36074692 0.198438957 0 0.00299199857 0.9999955 0 0.00299199857 0.9999955 0 0.00299199857 0.9999955 0 0.00299199857 0.9999955 0 0.876187742 0.4819699 0 0.876187742 0.4819699 0 0.876187742 0.4819699 0 0.876187742 0.4819699</VertexChannel>
+                      </Channels>
+                    </Vertices>
+                  </Batch>
+                </Geometry>
+              </Child>
+            </Children>
+          </Child>
+          <Child>
+            <Name>box</Name>
+            <Transform>1 0 0 0 0 1 0 0 0 0 1 0 1.05261 -81.3774 -16.8807 1</Transform>
+            <Children>
+              <Child Type="Graphics:MeshContent">
+                <Name>box</Name>
+                <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+                <Positions>-150.807 -90.0258 -170.397 150.807 -90.0258 -170.397 -150.807 -90.0258 170.397 150.807 -90.0258 170.397 150.807 90.0259 -170.397 -150.807 90.0259 -170.397 150.807 90.0259 170.397 -150.807 90.0259 170.397</Positions>
+                <Geometry>
+                  <Batch>
+                    <Material>#Resource4</Material>
+                    <Indices>0 1 2 3 2 1 4 5 6 7 6 5 8 9 10 11 10 9 12 13 14 15 14 13 16 17 18 19 18 17</Indices>
+                    <Vertices>
+                      <PositionIndices>0 1 2 3 4 1 5 0 3 6 2 7 7 5 2 0 4 6 1 3</PositionIndices>
+                      <Channels>
+                        <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0 -1 -0 0 -1 -0 0 -1 -0 0 -1 -0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</VertexChannel>
+                      </Channels>
+                    </Vertices>
+                  </Batch>
+                </Geometry>
+              </Child>
+            </Children>
+          </Child>
+        </Children>
+      </Child>
+    </Children>
+  </Asset>
+  <Resources>
+    <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
+      <Identity>
+        <SourceFilename>C:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1Content\treasure3.x</SourceFilename>
+        <SourceTool>XImporter</SourceTool>
+      </Identity>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">1 1 1</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0.2 0.2 0.2</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularPower" Type="float">128</Data>
+      </OpaqueData>
+    </Resource>
+    <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
+      <Identity>
+        <SourceFilename>C:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1Content\treasure3.x</SourceFilename>
+        <SourceTool>XImporter</SourceTool>
+      </Identity>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">1 1 1</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0.2 0.2 0.2</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularPower" Type="float">128</Data>
+      </OpaqueData>
+    </Resource>
+    <Resource ID="#Resource3" Type="Graphics:BasicMaterialContent">
+      <Identity>
+        <SourceFilename>C:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1Content\treasure3.x</SourceFilename>
+        <SourceTool>XImporter</SourceTool>
+      </Identity>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0.2 0.2 0.2</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularPower" Type="float">128</Data>
+      </OpaqueData>
+    </Resource>
+    <Resource ID="#Resource4" Type="Graphics:BasicMaterialContent">
+      <Identity>
+        <SourceFilename>C:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1Content\treasure3.x</SourceFilename>
+        <SourceTool>XImporter</SourceTool>
+      </Identity>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0.2 0.2 0.2</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularPower" Type="float">128</Data>
+      </OpaqueData>
+    </Resource>
+  </Resources>
+</XnaContent>

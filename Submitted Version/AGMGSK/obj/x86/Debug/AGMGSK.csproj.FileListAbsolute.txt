@@ -1,0 +1,195 @@
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\AGMGSK.exe
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\AGMGSK.pdb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\MonoGame.Framework.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.XAudio2.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D11.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.DXGI.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.Direct2D1.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Lidgren.Network.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.XInput.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.RawInput.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D9.dll
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.xml
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.XAudio2.xml
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D11.xml
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.DXGI.xml
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.Direct2D1.xml
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.XInput.xml
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.RawInput.xml
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D9.xml
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\obj\x86\Debug\AGMGSK.csprojResolveAssemblyReference.cache
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\obj\x86\Debug\AGMGSK.exe
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\obj\x86\Debug\AGMGSK.pdb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\100x100x100Brick.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\100x50x100Marker.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\boundingSphereV3.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\cloudV3.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\dogV6.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\magentaAvatarV6.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\redAvatarV6.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\templeV3.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\Consolas.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\colorTexture.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\heightTexture.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\inspectorBackground.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\marble.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\marble_0.xnb
+c:\users\dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\IgnoreMe.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\obj\x86\Debug\AGMGSK.exe
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\obj\x86\Debug\AGMGSK.pdb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\100x100x100Brick.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\100x50x100Marker.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\boundingSphereV3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\cloudV3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\dogV6.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\magentaAvatarV6.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\redAvatarV6.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\templeV3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\Consolas.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\colorTexture.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\heightTexture.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\inspectorBackground.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\marble.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\marble_0.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\AGMGSK.exe
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\AGMGSK.pdb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\IgnoreMe.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Lidgren.Network.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.xml
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\obj\x86\Debug\AGMGSK.csprojResolveAssemblyReference.cache
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\CourierNew.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\treasure2.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\treasure3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\magentaAvatarV3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\redAvatarV3.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\snoman.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\snowplow.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\squirrel.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\obj\x86\Debug\AGMGSK.exe
+C:\Users\Frank\Desktop\comp585project\AGMGSK\obj\x86\Debug\AGMGSK.pdb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\100x100x100Brick.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\100x50x100Marker.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\boundingSphereV3.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\cloudV3.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\dogV6.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\magentaAvatarV6.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\redAvatarV6.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\templeV3.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\treasure2.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\treasure3.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\magentaAvatarV3.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\redAvatarV3.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\snoman.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\snowplow.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\squirrel.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\alien.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\ufo.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\Consolas.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\CourierNew.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\colorTexture.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\heightTexture.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\inspectorBackground.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\marble.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\marble_0.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\AGMGSK.exe
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\AGMGSK.pdb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\IgnoreMe.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Lidgren.Network.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.xml
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Frank\Desktop\comp585project\AGMGSK\obj\x86\Debug\AGMGSK.csprojResolveAssemblyReference.cache
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\alien.xnb
+C:\Users\Dani\Documents\GitHub\comp585p1\AGMGSK\bin\Windows\Debug\Content\ufo.xnb
+C:\Users\Frank\Desktop\comp585project\AGMGSK\bin\Windows\Debug\Content\gold.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\obj\x86\Debug\AGMGSK.exe
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\obj\x86\Debug\AGMGSK.pdb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\100x100x100Brick.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\100x50x100Marker.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\boundingSphereV3.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\cloudV3.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\dogV6.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\magentaAvatarV6.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\redAvatarV6.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\templeV3.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\treasure2.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\treasure3.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\magentaAvatarV3.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\redAvatarV3.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\snoman.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\snowplow.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\squirrel.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\alien.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\ufo.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\gold.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\Consolas.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\CourierNew.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\colorTexture.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\heightTexture.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\inspectorBackground.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\marble.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Content\marble_0.xnb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\AGMGSK.exe
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\AGMGSK.pdb
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\IgnoreMe.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\Lidgren.Network.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.xml
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Dani\Downloads\comp585project-master\AGMGSK\obj\x86\Debug\AGMGSK.csprojResolveAssemblyReference.cache
+C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\AGMGSK\obj\x86\Debug\AGMGSK.exe
+C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\AGMGSK\obj\x86\Debug\AGMGSK.pdb
+C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\AGMGSK\obj\x86\Debug\AGMGSK.csprojResolveAssemblyReference.cache

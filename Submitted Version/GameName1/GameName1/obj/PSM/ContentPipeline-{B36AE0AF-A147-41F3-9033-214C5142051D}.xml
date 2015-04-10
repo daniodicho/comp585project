@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>100x100x100Brick.x</Source>
+      <Name>100x100x100Brick</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\100x100x100Brick.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\100x100x100Brick_0.xml</Key>
+        <Value>2015-04-08T15:56:59.9412027-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>100x50x100Marker.x</Source>
+      <Name>100x50x100Marker</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\100x50x100Marker.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\100x50x100Marker_0.xml</Key>
+        <Value>2015-04-08T15:57:00.5196069-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>boundingSphereV3.x</Source>
+      <Name>boundingSphereV3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\boundingSphereV3.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\boundingSphereV3_0.xml</Key>
+        <Value>2015-04-08T15:57:00.6687155-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>cloudV3.x</Source>
+      <Name>cloudV3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\cloudV3.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\cloudV3_0.xml</Key>
+        <Value>2015-04-08T15:57:01.0389763-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>dogV6.x</Source>
+      <Name>dogV6</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\dogV6.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\dogV6_0.xml</Key>
+        <Value>2015-04-08T15:57:01.1390482-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>magentaAvatarV6.x</Source>
+      <Name>magentaAvatarV6</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\magentaAvatarV6.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\magentaAvatarV6_0.xml</Key>
+        <Value>2015-04-08T15:57:01.232732-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>redAvatarV6.x</Source>
+      <Name>redAvatarV6</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\redAvatarV6.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\redAvatarV6_0.xml</Key>
+        <Value>2015-04-08T15:57:01.3483137-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>templeV3.x</Source>
+      <Name>templeV3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\templeV3.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\templeV3_0.xml</Key>
+        <Value>2015-04-08T15:57:01.689557-07:00</Value>
+      </Dependency>
+      <Request>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\marble_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>treasure2.x</Source>
+      <Name>treasure2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\treasure2.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\treasure2_0.xml</Key>
+        <Value>2015-04-08T15:57:02.1474542-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>treasure3.x</Source>
+      <Name>treasure3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\treasure3.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\treasure3_0.xml</Key>
+        <Value>2015-04-08T15:57:02.1924838-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>magentaAvatarV3.x</Source>
+      <Name>magentaAvatarV3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\magentaAvatarV3.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\magentaAvatarV3_0.xml</Key>
+        <Value>2015-04-08T15:57:02.2765416-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>redAvatarV3.x</Source>
+      <Name>redAvatarV3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\redAvatarV3.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\redAvatarV3_0.xml</Key>
+        <Value>2015-04-08T15:57:02.3596004-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>snoman.x</Source>
+      <Name>snoman</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\snoman.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\snoman_0.xml</Key>
+        <Value>2015-04-08T15:57:02.4936972-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>snowplow.x</Source>
+      <Name>snowplow</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\snowplow.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\snowplow_0.xml</Key>
+        <Value>2015-04-08T15:57:03.2512368-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>squirrel.x</Source>
+      <Name>squirrel</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\squirrel.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\squirrel_0.xml</Key>
+        <Value>2015-04-08T15:57:07.9737408-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>alien.x</Source>
+      <Name>alien</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\alien.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\alien_0.xml</Key>
+        <Value>2015-04-08T15:57:08.2729555-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>ufo.x</Source>
+      <Name>ufo</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\ufo.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\ufo_0.xml</Key>
+        <Value>2015-04-08T15:57:08.3014756-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>gold.x</Source>
+      <Name>gold</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\gold.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\gold_0.xml</Key>
+        <Value>2015-04-08T15:57:08.3344981-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Consolas.spritefont</Source>
+      <Name>Consolas</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\Consolas.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>CourierNew.spritefont</Source>
+      <Name>CourierNew</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\CourierNew.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>colorTexture.png</Source>
+      <Name>colorTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\colorTexture.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>heightTexture.png</Source>
+      <Name>heightTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\heightTexture.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>inspectorBackground.png</Source>
+      <Name>inspectorBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\inspectorBackground.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>marble.png</Source>
+      <Name>marble</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\marble.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>100x100x100Brick.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\100x100x100Brick_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>100x50x100Marker.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\100x50x100Marker_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>boundingSphereV3.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\boundingSphereV3_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>cloudV3.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\cloudV3_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>dogV6.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\dogV6_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>magentaAvatarV6.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\magentaAvatarV6_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>redAvatarV6.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\redAvatarV6_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>templeV3.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\templeV3_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>marble.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\marble_0.xnb</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>treasure2.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\treasure2_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>treasure3.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\treasure3_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>magentaAvatarV3.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\magentaAvatarV3_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>redAvatarV3.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\redAvatarV3_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>snoman.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\snoman_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>snowplow.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\snowplow_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>squirrel.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\squirrel_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>alien.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\alien_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>ufo.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\ufo_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <Item>
+      <Source>gold.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\gold_0.xml</Output>
+      <Time>2015-03-07T20:02:42-08:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{B36AE0AF-A147-41F3-9033-214C5142051D}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>PSM</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\obj\PSM\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dani\Documents\GitHub\comp585p1\Submitted Version\GameName1\GameName1\bin\PSM\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\MSBuild\MonoGame\v3.0\MonoGameContentProcessors.dll</Key>
+        <Value>2014-04-05T14:56:18-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-01-28T15:54:39.4623834-08:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
