@@ -43,3 +43,5 @@ C:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\De
 C:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\treasure2.xnb
 C:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\treasure3.xnb
 C:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\AGMGSK\bin\Windows\Debug\Content\gold.xnb
+C:\Users\IngenieroSantos\Documents\graphnewversion\comp585project\NEW VERSION\AGMGSK\AGMGSK\obj\x86\Debug\AGMGSK.exe
+C:\Users\IngenieroSantos\Documents\graphnewversion\comp585project\NEW VERSION\AGMGSK\AGMGSK\obj\x86\Debug\AGMGSK.pdb

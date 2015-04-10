@@ -1,5 +1,5 @@
 /*  
-    Copyright (C) 2015 G. Michael Barnes
+    Copyright (C) 2015 G. Michael Barnes a
  
     The file Agent.cs is part of AGMGSKv6 a port and update of AGXNASKv5 from
     XNA 4 refresh to MonoGames 3.2.  
