@@ -441,6 +441,9 @@ public class Stage : Game {
 		// create 20 clouds
 		Cloud cloud = new Cloud(this, "cloud", "ufo", 20);
 		Components.Add(cloud);
+
+        NavGraph ng = new NavGraph(this);
+        Components.Add(ng);
       }
   
    /// <summary>

@@ -47,7 +47,7 @@ namespace AGMGSKv6
         {
             int spacing = stage.Spacing; // sets the spacing of nav point
             node = new NavNode(new Vector3(x * spacing, stage.Terrain.surfaceHeight(x, z), z * spacing),
-                NavNode.NavNodeEnum.TREASURE);
+                NavNode.NavNodeEnum.WAYPOINT);
 
             addObject(new Vector3(x * spacing, stage.Terrain.surfaceHeight(x, z), z * spacing),
                 new Vector3(0, 1, 0), 0.79f); // add treasure object to the level

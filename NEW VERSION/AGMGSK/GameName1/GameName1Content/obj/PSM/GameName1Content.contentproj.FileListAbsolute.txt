@@ -1,1 +1,2 @@
 C:\Users\Dani\documents\visual studio 2013\Projects\AGMGSK\GameName1\GameName1Content\obj\PSM\GameName1Content.contentprojResolveAssemblyReference.cache
+C:\Users\Dani\Desktop\comp585project-master\NEW VERSION\AGMGSK\GameName1\GameName1Content\obj\PSM\GameName1Content.contentprojResolveAssemblyReference.cache

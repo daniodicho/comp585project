@@ -49,11 +49,17 @@ namespace AGMGSKv6 {
 /// 2/14/2012  last update
 /// </summary>
 public class NavNode : IComparable<NavNode> {
-   public enum NavNodeEnum { WAYPOINT, PATH, OPEN, CLOSED, TREASURE };
+   public enum NavNodeEnum {VERTEX, WAYPOINT, PATH, OPEN, CLOSED };
    private double distance;  // can be used with A* path finding.
    private Vector3 translation;
    private NavNodeEnum navigatable;
    private Vector3 nodeColor;
+
+   //Added Stuff
+   public int cost; // function of distance
+   public double distanceToSource, distanceToGoal;
+   public List<NavNode> adjacent;
+   public NavNode pathPredecessor;
 
 // constructors
 
@@ -64,7 +70,7 @@ public class NavNode : IComparable<NavNode> {
    public NavNode(Vector3 pos) {
       translation = pos;
       Navigatable = NavNodeEnum.WAYPOINT;
-      }
+   }
 
    /// <summary>
    /// Make a WAYPOINT and set its Navigational type
@@ -74,7 +80,7 @@ public class NavNode : IComparable<NavNode> {
    public NavNode(Vector3 pos, NavNodeEnum nType) {
       translation = pos;
       Navigatable = nType;
-      }
+   }
 
 // properties
 
