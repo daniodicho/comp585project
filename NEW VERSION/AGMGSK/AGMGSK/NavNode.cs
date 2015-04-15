@@ -70,6 +70,7 @@ public class NavNode : IComparable<NavNode> {
    public NavNode(Vector3 pos) {
       translation = pos;
       Navigatable = NavNodeEnum.WAYPOINT;
+      adjacent = new List<NavNode>();
    }
 
    /// <summary>
@@ -80,6 +81,8 @@ public class NavNode : IComparable<NavNode> {
    public NavNode(Vector3 pos, NavNodeEnum nType) {
       translation = pos;
       Navigatable = nType;
+      adjacent = new List<NavNode>();
+
    }
 
 // properties

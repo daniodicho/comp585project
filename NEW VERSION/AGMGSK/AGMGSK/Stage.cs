@@ -110,6 +110,7 @@ public class Stage : Game {
     protected Model treasure3D;          // SW: a treasure marker
     protected List<Treasures> TreasureList = null; // SW list object of all treasures
     public bool pathMode = true;     // SW: Path mode beween normal and treasure finding
+    private NavGraph ng;
 
 
 
@@ -442,7 +443,7 @@ public class Stage : Game {
 		Cloud cloud = new Cloud(this, "cloud", "ufo", 20);
 		Components.Add(cloud);
 
-        NavGraph ng = new NavGraph(this);
+        ng = new NavGraph(this);
         Components.Add(ng);
       }
   
