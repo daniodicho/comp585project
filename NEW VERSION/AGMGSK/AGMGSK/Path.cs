@@ -184,6 +184,16 @@ public class Path : DrawableGameComponent {
             }
          }
       }
-      
+      public Path reversePath(Path p)
+      {
+            Path p2 = p;
+            for (int i = 0; i < p.Count / 2; i++)
+            {
+                NavNode temp = p.node[i];
+                p.node[i] = p.node[p.Count - i - 1];
+                p.node[p.Count - i - 1] = temp;
+            }
+            return p2;
+      }
    }
 }

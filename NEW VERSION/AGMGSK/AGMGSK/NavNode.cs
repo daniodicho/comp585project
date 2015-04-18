@@ -56,7 +56,7 @@ public class NavNode : IComparable<NavNode> {
    private Vector3 nodeColor;
 
    //Added Stuff
-   public int cost; // function of distance
+   public double cost; // function of distance
    public double distanceToSource, distanceToGoal;
    public List<NavNode> adjacent;
    public NavNode pathPredecessor;
@@ -73,6 +73,8 @@ public class NavNode : IComparable<NavNode> {
       adjacent = new List<NavNode>();
    }
 
+   
+
    /// <summary>
    /// Make a WAYPOINT and set its Navigational type
    /// </summary>
@@ -85,6 +87,14 @@ public class NavNode : IComparable<NavNode> {
 
    }
 
+   public NavNode(Vector3 pos, NavNodeEnum nType, int dist)
+   {
+       translation = pos;
+       Navigatable = nType;
+       adjacent = new List<NavNode>();
+       distance = dist;
+
+   }
 // properties
 
    public Vector3 NodeColor {
@@ -107,6 +117,9 @@ public class NavNode : IComparable<NavNode> {
                case NavNodeEnum.PATH     : nodeColor = Color.Blue.ToVector3();   break;  // blue
                case NavNodeEnum.OPEN     : nodeColor = Color.White.ToVector3();  break;  // white
                case NavNodeEnum.CLOSED   : nodeColor = Color.Red.ToVector3();    break;  // red
+               case NavNodeEnum.VERTEX:nodeColor = Color.Green.ToVector3();break;  // red
+
+
                }
             }} 
 

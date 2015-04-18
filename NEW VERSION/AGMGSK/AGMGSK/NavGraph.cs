@@ -13,26 +13,29 @@ using Microsoft.Xna.Framework.Storage;
 namespace AGMGSKv6
 {
     //Class that creates the quadtree nodes and handles path finding with A*
-    class NavGraph : DrawableGameComponent
+    public class NavGraph : DrawableGameComponent
     {
-        Dictionary<String, NavNode> graph; // Key "x:z"
+        int totalAdjacents = 0;
+        public Dictionary<String, NavNode> graph; // Key "x:z"
         List<NavNode> open, closed, path;
         List<NavNode> aStarPath;
-        bool pathComplete;
+        public bool pathComplete = false;
         List<NavNode> allNodes;
         public Stage stage;         // instance of the stage
         int nodesSpacing;
         
         // Constructor that gets the instance of the stage and creates the quad tree nodes
-        public NavGraph(Stage s) : base(s)
+        public NavGraph(Stage s)
+            : base(s)
         {
-            nodesSpacing = 2;
+            nodesSpacing = 125;
             stage = s;
             graph = new Dictionary<String, NavNode>();                 // instantiate the nodes in the quad tree
             allNodes = new List<NavNode>();
-            createQuadTreeNodes(4,4,508,508);
-            setAllAdjacents();
-  //          cleanUp();
+            createQuadTreeNodes(2 * stage.Spacing, 2 * stage.Spacing, 510 * stage.Spacing, 510 * stage.Spacing);
+            //          setAllAdjacents();
+            //          cleanUp();
+            
 
         }
 
@@ -42,7 +45,7 @@ namespace AGMGSKv6
             if (Math.Abs(x1 - x2) > nodesSpacing)
             {
                 // if there is an object in the area, break to four quadrants and recurse
-                if (objectExists(x1, y1, x2, y2))
+                if (objectExists(x1, y1, x2, y2)||(x2-x1>50*stage.Spacing))
                 {
                     createQuadTreeNodes(x1, y1, (x2 + x1) / 2, (y2 + y1) / 2);     //top left
                     createQuadTreeNodes((x2 + x1) / 2, (y2 + y1) / 2, x2, y2);     // bottom right
@@ -51,28 +54,95 @@ namespace AGMGSKv6
                 }
                 else
                 {
+                    List<NavNode> currentNodes = new List<NavNode>();
                     // Creates 8 nodes on the edges of the rectangle , and one node in the center
-                    if(!graph.ContainsKey(skey(x1 * stage.Spacing, y1 * stage.Spacing))){
-                        NavNode node1 = new NavNode(new Vector3(x1 * stage.Spacing, stage.surfaceHeight(x1, y1), y1 * stage.Spacing), NavNode.NavNodeEnum.PATH);
-                        graph.Add(skey(x1 * stage.Spacing, y1 * stage.Spacing), node1);
+                    if (!graph.ContainsKey(skey(x1  , y1  )))
+                    {
+                        NavNode node1 = new NavNode(new Vector3(x1  , stage.surfaceHeight(x1  , y1  ), y1  ), NavNode.NavNodeEnum.PATH,Math.Abs(x1-x2)/2);
+                        graph.Add(skey(x1  , y1  ), node1);
+                        currentNodes.Add(node1);
                     }
-                    if (!graph.ContainsKey(skey(x2 * stage.Spacing, y2 * stage.Spacing)))
-                    graph.Add(skey(x2 * stage.Spacing, y2 * stage.Spacing), new NavNode(new Vector3(x2 * stage.Spacing, stage.surfaceHeight(x2, y2), y2 * stage.Spacing), NavNode.NavNodeEnum.PATH));
-                    if (!graph.ContainsKey(skey(x1 * stage.Spacing, y2 * stage.Spacing)))
-                    graph.Add(skey(x1 * stage.Spacing, y2 * stage.Spacing), new NavNode(new Vector3(x1 * stage.Spacing, stage.surfaceHeight(x1, y2), y2 * stage.Spacing), NavNode.NavNodeEnum.PATH));
-                    if (!graph.ContainsKey(skey(x2 * stage.Spacing, y1 * stage.Spacing)))
-                    graph.Add(skey(x2 * stage.Spacing, y1 * stage.Spacing), new NavNode(new Vector3(x2 * stage.Spacing, stage.surfaceHeight(x2, y1), y1 * stage.Spacing), NavNode.NavNodeEnum.PATH));
-                    if (!graph.ContainsKey(skey((x1 + x2) / 2 * stage.Spacing, (y1 + y2) / 2 * stage.Spacing)))
-                    graph.Add(skey((x1 + x2) / 2 * stage.Spacing, (y1 + y2) / 2 * stage.Spacing), new NavNode(new Vector3(((x1 + x2) / 2) * stage.Spacing, stage.surfaceHeight((x1 + x2) * stage.Spacing / 2, (y1 + y2) * stage.Spacing / 2), (y1 + y2) / 2 * stage.Spacing), NavNode.NavNodeEnum.PATH));
-                    if (!graph.ContainsKey(skey((x1 + x2) / 2 * stage.Spacing, y1 * stage.Spacing)))
-                    graph.Add(skey((x1 + x2) / 2 * stage.Spacing,y1 * stage.Spacing),new NavNode(new Vector3(((x1 + x2) / 2) * stage.Spacing, stage.surfaceHeight((x1 + x2) * stage.Spacing / 2, y1 * stage.Spacing), y1 * stage.Spacing), NavNode.NavNodeEnum.PATH));
-                    if (!graph.ContainsKey(skey((x1 + x2) / 2 * stage.Spacing,y2 * stage.Spacing)))
-                    graph.Add(skey((x1 + x2) / 2 * stage.Spacing,y2 * stage.Spacing),new NavNode(new Vector3(((x1 + x2) / 2) * stage.Spacing, stage.surfaceHeight((x1 + x2) * stage.Spacing / 2, y2 * stage.Spacing), y2 * stage.Spacing), NavNode.NavNodeEnum.PATH));
-                    if (!graph.ContainsKey(skey(x1 * stage.Spacing, (y1 + y2) / 2 * stage.Spacing)))
-                    graph.Add(skey(x1 * stage.Spacing,(y1 + y2) / 2 * stage.Spacing),new NavNode(new Vector3(x1 * stage.Spacing, stage.surfaceHeight(x1 * stage.Spacing, (y1 + y2) * stage.Spacing / 2), (y1 + y2) / 2 * stage.Spacing), NavNode.NavNodeEnum.PATH));
-                    if (!graph.ContainsKey(skey(x2 * stage.Spacing, (y1 + y2) / 2 * stage.Spacing)))
-                        graph.Add(skey(x2 * stage.Spacing, (y1 + y2) / 2 * stage.Spacing), new NavNode(new Vector3(x2 * stage.Spacing, stage.surfaceHeight(x2 * stage.Spacing, (y1 + y2) * stage.Spacing / 2), (y1 + y2) / 2 * stage.Spacing), NavNode.NavNodeEnum.PATH));
-                  
+                    if (!graph.ContainsKey(skey(x2  , y2  )))
+                    {
+                        NavNode node2 = new NavNode(new Vector3(x2  , stage.surfaceHeight(x2  , y2  ), y2  ), NavNode.NavNodeEnum.PATH,Math.Abs(x1-x2)/2);
+                        graph.Add(skey(x2  , y2  ), node2);
+                        currentNodes.Add(node2);
+                    }
+                    if (!graph.ContainsKey(skey(x1  , y2  )))
+                    {
+                        NavNode node3 = new NavNode(new Vector3(x1  , stage.surfaceHeight(x1  , y2  ), y2  ), NavNode.NavNodeEnum.PATH,Math.Abs(x1-x2)/2);
+                        graph.Add(skey(x1  , y2  ), node3);
+                        currentNodes.Add(node3);
+                    }
+                    if (!graph.ContainsKey(skey(x2  , y1  )))
+                    {
+                        NavNode node4 = new NavNode(new Vector3(x2  , stage.surfaceHeight(x2  , y1  ), y1  ), NavNode.NavNodeEnum.PATH,Math.Abs(x1-x2)/2);
+                        graph.Add(skey(x2  , y1  ), node4);
+                        currentNodes.Add(node4);
+                    }
+                    if (!graph.ContainsKey(skey((x1 + x2) / 2  , (y1 + y2) / 2  )))
+                    {
+                        NavNode node5 = new NavNode(new Vector3(((x1 + x2) / 2)  , stage.surfaceHeight((x1 + x2)   / 2, (y1 + y2)   / 2), (y1 + y2) / 2  ), NavNode.NavNodeEnum.PATH,Math.Abs(x1-x2)/2);
+                        graph.Add(skey((x1 + x2) / 2  , (y1 + y2) / 2  ), node5);
+                        currentNodes.Add(node5);
+                    }
+                    if (!graph.ContainsKey(skey((x1 + x2) / 2  , y1  )))
+                    {
+                        NavNode node6 = new NavNode(new Vector3(((x1 + x2) / 2)  , stage.surfaceHeight((x1 + x2)   / 2, y1  ), y1  ), NavNode.NavNodeEnum.PATH,Math.Abs(x1-x2)/2);
+                        graph.Add(skey((x1 + x2) / 2  , y1  ), node6);
+                        currentNodes.Add(node6);
+                    }
+                    if (!graph.ContainsKey(skey((x1 + x2) / 2  , y2  )))
+                    {
+                        NavNode node7 =new NavNode(new Vector3(((x1 + x2) / 2)  , stage.surfaceHeight((x1 + x2)   / 2, y2  ), y2  ), NavNode.NavNodeEnum.PATH,Math.Abs(x1-x2)/2);
+                        graph.Add(skey((x1 + x2) / 2  , y2  ), node7);
+                        currentNodes.Add(node7);
+                    }
+                    if (!graph.ContainsKey(skey(x1  , (y1 + y2) / 2  )))
+                    {
+                        NavNode node8 = new NavNode(new Vector3(x1  , stage.surfaceHeight(x1  , (y1 + y2)   / 2), (y1 + y2) / 2  ), NavNode.NavNodeEnum.PATH,Math.Abs(x1-x2)/2);
+                        graph.Add(skey(x1  , (y1 + y2) / 2  ), node8);
+                        currentNodes.Add(node8);
+                    }
+                    if (!graph.ContainsKey(skey(x2  , (y1 + y2) / 2  )))
+                    {
+                        NavNode node9 = new NavNode(new Vector3(x2  , stage.surfaceHeight(x2  , (y1 + y2)   / 2), (y1 + y2) / 2  ), NavNode.NavNodeEnum.PATH,Math.Abs(x1-x2)/2);
+                        graph.Add(skey(x2  , (y1 + y2) / 2  ), node9);
+                        currentNodes.Add(node9);
+                    }
+                    foreach (NavNode cur in currentNodes)
+                    {
+                        foreach (KeyValuePair<String, NavNode> nav in graph)
+                        {
+                            if (Vector3.Distance(cur.Translation,nav.Value.Translation) < 1.5  * Math.Abs(x1 - x2) / 2)
+                            {
+                                if (cur.Translation != nav.Value.Translation)
+                                {
+                                    if(cur.adjacent.Count>100)
+                                    {
+
+                                    }
+                                    connect(cur, nav.Value);
+                                }
+
+                            }
+                        }
+                    }
+
+                    
+
+            /*        foreach (KeyValuePair<String, NavNode> node in graph)
+                    {
+                        foreach(NavNode cur in currentNodes)
+                        {
+                            if(Math.Sqrt(Math.Pow(node.Value.Translation.X+cur.Translation.X,2)+Math.Pow(node.Value.Translation.Z+cur.Translation.Z,2))<1.5*stage.Spacing*(x1+x2)/2){
+                                if (cur != node.Value)
+                                {
+                                    connect(cur, node.Value);
+                                }
+                            }
+                        }
+                    }*/
                 }
 
             }
@@ -92,16 +162,13 @@ namespace AGMGSKv6
         // Checks if there is a collidable object in the quadrant
         public bool objectExists(int x1, int y1, int x2, int y2)
         {
-            x1 *= stage.Spacing;
-            x2 *= stage.Spacing;
-            y1 *= stage.Spacing;
-            y2 *= stage.Spacing;
+           
 
             // Check all collidable object who are either wall or temple
             foreach (Object3D obj in stage.Collidable) {
                 if(obj.Name.Contains("wall")||obj.Name.Contains("temple")){
                     //if the object or its buounding sphere is within the boundaries of the rectangle return true
-                    if((obj.Translation.X+obj.ObjectBoundingSphereRadius>x1&&obj.Translation.X-obj.ObjectBoundingSphereRadius<x2)&&(obj.Translation.Z+obj.ObjectBoundingSphereRadius>y1&&obj.Translation.Z-obj.ObjectBoundingSphereRadius<y2)){
+                    if((obj.Translation.X+obj.ObjectBoundingSphereRadius*2>x1&&obj.Translation.X-obj.ObjectBoundingSphereRadius*2<x2)&&(obj.Translation.Z+obj.ObjectBoundingSphereRadius*2>y1&&obj.Translation.Z-obj.ObjectBoundingSphereRadius*2<y2)){
                         return true;
                     }
                 }
@@ -150,32 +217,52 @@ namespace AGMGSKv6
             }
         }
 
-        public Path aStar(NavNode source, NavNode destination)
+        public Path aStar(Vector3 startPosition, NavNode destination)
         {
+            NavNode source = null;
+            float closest = Int64.MaxValue;
+            foreach (KeyValuePair<String, NavNode> node in graph)
+            {
+                float d = Vector3.Distance(startPosition,new Vector3(node.Value.Translation.X,node.Value.Translation.Y,node.Value.Translation.Z));
+                if(d<closest)
+                {
+                    source = node.Value;
+                    closest = d;
+                }
+            }
+
             pathComplete = false;
             open = new List<NavNode>();
             closed = new List<NavNode>();
             List<NavNode> p = new List<NavNode>();
             Path path= null;
+            NavNode cur= source;
+            cur.cost = 0;
             
-            open.Add(source);
+            open.Add(cur);
+            open.Sort(delegate(NavNode n1, NavNode n2)
+                {
+                    return n1.cost.CompareTo(n2.cost);
+                });
             while (!(open.Count == 0))
             {
-                open.Sort(sortByCost);
-                NavNode cur = open[0];
-                open.Remove(cur);
-                if (cur == destination)
+
+                cur = open[0];
+                open.RemoveAt(0);
+                if (Vector3.Distance(cur.Translation,destination.Translation)<=cur.Distance)
                 {
-                    pathComplete = true;
+                    break;
                 }
-                else
-                {
                     closed.Add(cur);
-                }
+     //               cur.Navigatable = NavNode.NavNodeEnum.CLOSED;
+
                 foreach (NavNode node in cur.adjacent)
                 {
                     if (!open.Contains(node) && !closed.Contains(node))
                     {
+                        // keep track of the path
+                        node.pathPredecessor = cur;
+
                         // distance from the source to adjacent node
                         node.distanceToSource = cur.distanceToSource +
                             Vector3.Distance(cur.Translation, node.Translation);
@@ -190,27 +277,37 @@ namespace AGMGSKv6
 
                         // Add the node the the open set
                         open.Add(node);
-
-                        // keep track of the path
-                        node.pathPredecessor = cur;
+                        node.Navigatable = NavNode.NavNodeEnum.OPEN;
+                        
                     }
                 }
-                int count=0;
-                while(cur.pathPredecessor!=null){
-                    count++;
-                    p.Add(cur.pathPredecessor);
+                open.Sort(delegate(NavNode n1, NavNode n2)
+                {
+                    return n1.cost.CompareTo(n2.cost);
+                });
+
+
+            }
+            //    int count=0;
+            p.Add(new NavNode(destination.Translation));
+                while (Vector3.Distance(cur.Translation, source.Translation) != 0.0)
+                {
+              //      count++;
+                    p.Add(cur);
+                    cur.Navigatable = NavNode.NavNodeEnum.PATH;
                     cur=cur.pathPredecessor;
                 }
-                int[,] pathValues=new int[count,count];
+            /*    int[,] pathValues=new int[count,2];
                 while (count != 1)
                 {
                     count--;
                     pathValues[count,0] = (int)p[count].Translation.X;
-                    pathValues[count,0] = (int)p[count].Translation.Z;
-                }
+                    pathValues[count,1] = (int)p[count].Translation.Z;
+                }*/
 
-                path = new Path(stage, pathValues, Path.PathType.SINGLE);
-            }
+                path = new Path(stage, p, Path.PathType.REVERSE);
+                path = path.reversePath(path);
+                pathComplete = true;
             return path;
 
         }
@@ -223,24 +320,24 @@ namespace AGMGSKv6
         {
             if (!node1.adjacent.Contains(node2))
             {
-                foreach (NavNode node in node1.adjacent)
-                {
-
-                }
                 node1.adjacent.Add(node2);
+                totalAdjacents++;
             }
             if (!node2.adjacent.Contains(node1))
-            node2.adjacent.Add(node1);
+            {
+                totalAdjacents++;
+                node2.adjacent.Add(node1);
+            }
         }
+
+        
         //Draws the nav nodes
         public override void Draw(GameTime gameTime)
         {
             Matrix[] modelTransforms = new Matrix[stage.WayPoint3D.Bones.Count];
             foreach (KeyValuePair<String, NavNode> navNode in graph)
             {
-            
-       //     foreach (NavNode navNode in allNodes)
-            
+                        
                 // draw the Path markers
                 foreach (ModelMesh mesh in stage.WayPoint3D.Meshes)
                 {
@@ -277,4 +374,6 @@ namespace AGMGSKv6
             return String.Format("{0}:{1}", x, z);
         }
     }
+
+    
 }

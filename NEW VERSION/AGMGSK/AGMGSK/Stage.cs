@@ -131,6 +131,10 @@ public class Stage : Game {
 
    // Properties
 
+    public NavGraph Ng {
+      get { return ng; }
+      set { ng = value; } }
+
    public Vector3 AmbientLight {
       get { return ambientColor; } }
 
@@ -403,10 +407,12 @@ public class Stage : Game {
 
       // SW create treasures 1-4 (modified by Ernie)
       TreasureList = new List<Treasures>();
-      TreasureList.Add(new Treasures(this, "treasure", "gold", 400, 400));
-      TreasureList.Add(new Treasures(this, "treasure", "gold", 475, 490));
+      TreasureList.Add(new Treasures(this, "treasure", "gold", 500, 500));
+      TreasureList.Add(new Treasures(this, "treasure", "gold", 490, 470));
       TreasureList.Add(new Treasures(this, "treasure", "gold", 447, 453));
       TreasureList.Add(new Treasures(this, "treasure", "gold", 500, 425));
+      TreasureList.Add(new Treasures(this, "treasure", "gold", 480, 420));
+
 
       foreach (Treasures t in TreasureList) // SW traverse through all treasures and marked non-collideable and add them to the scene
       {
@@ -420,7 +426,7 @@ public class Stage : Game {
               new Vector3(0, 1, 0), 0.80f, "redAvatarV6", TreasureList);  // face looking diagonally across stage // SW passes treasure list to player class
       Components.Add(player);
       npAgent = new NPAgent(this, "Evader",
-         new Vector3(400 * spacing, terrain.surfaceHeight(400, 400), 400 * spacing),
+         new Vector3(450 * spacing, terrain.surfaceHeight(450, 420), 420 * spacing),
          new Vector3(0, 1, 0), 0.0f, "magentaAvatarV6", TreasureList);  // facing +Z // SW passes treasure list to npagent class
       Components.Add(npAgent);
 		//  ------ The wall and pack are required for Comp 565 projects, but not AGMGSK   ---------
@@ -445,6 +451,8 @@ public class Stage : Game {
 
         ng = new NavGraph(this);
         Components.Add(ng);
+        //ng.graph.TryGetValue
+
       }
   
    /// <summary>
