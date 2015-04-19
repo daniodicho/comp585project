@@ -49,6 +49,7 @@ public class Path : DrawableGameComponent {
    private PathType pathType;
    private bool done;
    private Stage stage;
+ //  public bool completed;
 
    /// <summary>
    /// Create a path
@@ -62,6 +63,7 @@ public class Path : DrawableGameComponent {
       pathType = aPathType;
       stage = theStage;
       done = false;
+   //   completed = false;
       }
 
 	/// <summary>
@@ -157,6 +159,7 @@ public class Path : DrawableGameComponent {
 
    public override void Draw(GameTime gameTime) {
       Matrix[] modelTransforms = new Matrix[stage.WayPoint3D.Bones.Count];
+     //  if(!completed)
       foreach(NavNode navNode in node) {
          // draw the Path markers
             foreach (ModelMesh mesh in stage.WayPoint3D.Meshes) {
@@ -184,6 +187,8 @@ public class Path : DrawableGameComponent {
             }
          }
       }
+
+      //swap last node with first node until getting the inverse of a path
       public Path reversePath(Path p)
       {
             Path p2 = p;

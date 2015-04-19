@@ -49,13 +49,15 @@ namespace AGMGSKv6 {
 /// </summary>
 public class NPAgent : Agent {
    private NavNode nextGoal;
-   private NavNode nextTreasurePathNode;
-   private Path path;
+   private NavNode nextTreasurePathNode;         // next node on the treasure path
+   private Path path;                 // patrol path
    private int snapDistance = 20;  // this should be a function of step and stepSize
    protected List<Treasures> TreasureList = null; // SW treasure list
-   Path treasurePath;
-   NavNode lastSeen;
-   Boolean tagged =false;
+   Path treasurePath;                // path to a treasure
+   NavNode lastSeen;                // stores the last location to get back to after aStar
+   Boolean tagged =false;            // used to determine if treasure was tagged
+   int treasureDetection = 4000;        //detecction radius
+   int tagDistance = 200;
 
 
 
@@ -131,40 +133,41 @@ public class NPAgent : Agent {
 
            
            float distanceToTreasure=99999;
-           float minDistance = 99999;
+           float minDistance = 99999;             // the distance to the closest treasure
            foreach (Treasures t in TreasureList) // SW check to see if the NPAgent is close to any treasure
            {
                if (!t.Tag) // only examine treasure if it is not tagged
                {
                    NavNode nav = t.Node; // extract NavNode from Treasure Class
                    
-                     distanceToTreasure = Vector3.Distance(
+                     distanceToTreasure = Vector3.Distance(            // find the distance to each of the treasure
                       new Vector3(nav.Translation.X, 0, nav.Translation.Z),
                       new Vector3(agentObject.Translation.X, 0, agentObject.Translation.Z));
                      if (distanceToTreasure < minDistance)
                      {
-                         minDistance = distanceToTreasure;
+                         minDistance = distanceToTreasure;           // find the closest
                      }
                }
            }
-           if ((minDistance <= 4000) && (stage.pathMode))
+           if ((minDistance <= treasureDetection) && (stage.pathMode))            // if the closest distance is less than 4000
            {
-               changePath();
-               //stage.Ng.aStar(this.agentObject.Translation, nav);
+               changePath();                                                     //switch to treasure chasing mode
            }
        }
            else // SW treasure mode
             {
-                if (nextTreasurePathNode != null)
-                agentObject.turnToFace(nextTreasurePathNode.Translation);
+                if (nextTreasurePathNode != null)                                          //if initialized
+                agentObject.turnToFace(nextTreasurePathNode.Translation);                  //always turn towards next node on treasure path
                 // this until the next iteration to notify the agent to turn towards the next untagged treasure
                 if (!nextUntagged()) // if no more treasures, return to pathfinding mode
                 {
                     stage.pathMode = true;
                     agentObject.turnToFace(nextGoal.Translation);
+                    stage.Components.Remove(treasurePath);                               //clears map from path nodes
+                    stage.Ng.AStarPath = new List<NavNode>();                           //clears map from a starnodes
                 }
                 float distanceToTreasureNode = 99999;
-                if (treasurePath != null && nextTreasurePathNode!=null)
+                if (treasurePath != null && nextTreasurePathNode != null)         //if initialized
                 {
                     distanceToTreasureNode = Vector3.Distance(
                     new Vector3(nextTreasurePathNode.Translation.X, 0, nextTreasurePathNode.Translation.Z),
@@ -172,7 +175,7 @@ public class NPAgent : Agent {
                 }
                 if (distanceToTreasureNode < snapDistance)
                 {
-                    nextTreasurePathNode = treasurePath.NextNode;
+                    nextTreasurePathNode = treasurePath.NextNode;                   //if reached the node go to nexr
                 }
                 foreach (Treasures t in TreasureList) // SW check to see if the NPAgent is close to any treasure
                 {
@@ -183,21 +186,22 @@ public class NPAgent : Agent {
                         float distance = Vector3.Distance(
                            new Vector3(nav.Translation.X, 0, nav.Translation.Z),
                            new Vector3(agentObject.Translation.X, 0, agentObject.Translation.Z));
-                        
-                        if (distance <= snapDistance*4)
+
+                        if (distance <= tagDistance)
                         {
-                            tagged = true;
+                            tagged = true;           //tagged now npc goes back to source node
                             IncTreasures++; // increment number of treasures that the NP agent has found
                             t.Tag = true; // set treasure as found
                             String dir = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName;
                             playSound(dir+"\\noTreasure.wav");
                             t.Update(gameTime);
                         }
-                        if ((Vector3.Distance(lastSeen.Translation, agentObject.Translation) < 5)&&(tagged))
+                        if ((Vector3.Distance(lastSeen.Translation, agentObject.Translation) < 5)&&(tagged))         //if reached source go pack to parol mode
                         {
-                            changePath();
                             tagged = false;
-                           // agentObject.Translation = new Vector3(0, 0, 0);
+                            stage.Components.Remove(treasurePath);                      //clears path nodes
+                            stage.Ng.AStarPath = new List<NavNode>();                   //clears a* nodes
+                            changePath();
                         }
                         
                     }
@@ -221,6 +225,7 @@ public class NPAgent : Agent {
            agentObject.turnToFace(nextGoal.Translation);  // orient towards the next goal
            treasurePath = path;
            stage.Ng.pathComplete = false;
+
        }
        else // if in treasure mode
        {
@@ -242,7 +247,7 @@ public class NPAgent : Agent {
            distance = Vector3.Distance(
               new Vector3(nav.Translation.X, 0, nav.Translation.Z),
               new Vector3(agentObject.Translation.X, 0, agentObject.Translation.Z));
-           if (!t.Tag && distance < closest)
+           if (!t.Tag && distance < closest)                                           //finds the closest treasure and stores its location
            {
                closest = distance;
                closestTreasure = t;
@@ -254,18 +259,16 @@ public class NPAgent : Agent {
        }
        else
        {
-          // agentObject.turnToFace(closestTreasure.Node.Translation);
-
-           if (!stage.Ng.pathComplete)
+           if (!stage.Ng.pathComplete)            // if no A* is created
            {
-               treasurePath = stage.Ng.aStar(this.agentObject.Translation, closestTreasure.Node);
-               stage.Components.Add(treasurePath);
-               nextTreasurePathNode = treasurePath.NextNode;
-               lastSeen = nextTreasurePathNode;
+               treasurePath = stage.Ng.aStar(this.agentObject.Translation, closestTreasure.Node);         //find path from a*
+               stage.Components.Add(treasurePath);                             //render nav nodes
+               nextTreasurePathNode = treasurePath.NextNode;              //store dirst node of the path
+               lastSeen = nextTreasurePathNode;                         //store source position
            }
- //          nextTreasurePathNode = treasurePath.NextNode;
-           if (nextTreasurePathNode!=null)
-           agentObject.turnToFace(nextTreasurePathNode.Translation);
+
+           if (nextTreasurePathNode!=null)                      // if initislized
+           agentObject.turnToFace(nextTreasurePathNode.Translation);                // turn to target node
 
            return true;
        }

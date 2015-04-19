@@ -52,7 +52,7 @@ public class Player : Agent {
    private int rotate;
    private float angle;
    private Matrix initialOrientation;
-   private int tagDistance = 300; // SW Distance to detect player tagging a treasure
+   private int tagDistance = 200; // SW Distance to detect player tagging a treasure
    protected List<Treasures> TreasureList = null; // SW stores passed list of treasures from stage
 
    public Player(Stage theStage, string label, Vector3 pos, Vector3 orientAxis,

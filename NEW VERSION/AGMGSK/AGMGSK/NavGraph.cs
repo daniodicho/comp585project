@@ -1,4 +1,10 @@
-﻿#region Using Statements
+﻿/* Arnold Santos   <arnold2020@yahoo.com>
+ * Cesar Zalzalah  <7701707@gmail.com>
+ * Dani Odicho     <dannykaka2009@hotmail.com>
+ * Ernie Ledezma   <eledezma518@gmail.com>
+*/  
+
+#region Using Statements
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
@@ -15,14 +21,13 @@ namespace AGMGSKv6
     //Class that creates the quadtree nodes and handles path finding with A*
     public class NavGraph : DrawableGameComponent
     {
-        int totalAdjacents = 0;
+        int totalAdjacents = 0;       //total number of adjacents in the graph
         public Dictionary<String, NavNode> graph; // Key "x:z"
         List<NavNode> open, closed, path;
         List<NavNode> aStarPath;
         public bool pathComplete = false;
-        List<NavNode> allNodes;
         public Stage stage;         // instance of the stage
-        int nodesSpacing;
+        int nodesSpacing;           // Maximum distance between two nav nodes
         
         // Constructor that gets the instance of the stage and creates the quad tree nodes
         public NavGraph(Stage s)
@@ -31,13 +36,15 @@ namespace AGMGSKv6
             nodesSpacing = 125;
             stage = s;
             graph = new Dictionary<String, NavNode>();                 // instantiate the nodes in the quad tree
-            allNodes = new List<NavNode>();
-            createQuadTreeNodes(2 * stage.Spacing, 2 * stage.Spacing, 510 * stage.Spacing, 510 * stage.Spacing);
-            //          setAllAdjacents();
-            //          cleanUp();
+            createQuadTreeNodes(2 * stage.Spacing, 2 * stage.Spacing, 510 * stage.Spacing, 510 * stage.Spacing);   //builds the quad tree on the map with a minor offest
             
 
         }
+
+        //Properties
+        public List<NavNode> AStarPath {
+      get { return aStarPath; }
+      set { aStarPath = value; } }
 
         // Creates the quad tree nodes
         public void createQuadTreeNodes(int x1, int y1, int x2, int y2)
@@ -114,15 +121,11 @@ namespace AGMGSKv6
                     {
                         foreach (KeyValuePair<String, NavNode> nav in graph)
                         {
-                            if (Vector3.Distance(cur.Translation,nav.Value.Translation) < 1.5  * Math.Abs(x1 - x2) / 2)
+                            if (Vector3.Distance(cur.Translation,nav.Value.Translation) < 1.5  * Math.Abs(x1 - x2) / 2)   // looks for the top , bottom and diagonal adjacents ( 1.5 > sqrt(2) )
                             {
                                 if (cur.Translation != nav.Value.Translation)
                                 {
-                                    if(cur.adjacent.Count>100)
-                                    {
-
-                                    }
-                                    connect(cur, nav.Value);
+                                    connect(cur, nav.Value);          // make the two nodes adjacents
                                 }
 
                             }
@@ -131,34 +134,14 @@ namespace AGMGSKv6
 
                     
 
-            /*        foreach (KeyValuePair<String, NavNode> node in graph)
-                    {
-                        foreach(NavNode cur in currentNodes)
-                        {
-                            if(Math.Sqrt(Math.Pow(node.Value.Translation.X+cur.Translation.X,2)+Math.Pow(node.Value.Translation.Z+cur.Translation.Z,2))<1.5*stage.Spacing*(x1+x2)/2){
-                                if (cur != node.Value)
-                                {
-                                    connect(cur, node.Value);
-                                }
-                            }
-                        }
-                    }*/
+            
                 }
 
             }
-            
 
         }
 
-        public void cleanUp(){
-            foreach (KeyValuePair<String, NavNode> nav in graph)
-            {
-                foreach (KeyValuePair<String, NavNode> nav2 in graph)
-                {
-
-                } 
-            } 
-        }
+        
         // Checks if there is a collidable object in the quadrant
         public bool objectExists(int x1, int y1, int x2, int y2)
         {
@@ -178,49 +161,17 @@ namespace AGMGSKv6
         }
 
 
-        public void setAllAdjacents()
-        {
-            foreach (KeyValuePair<String, NavNode> node1 in graph)
-            {
-                List<NavNode> onSameRow = new List<NavNode>();
-                onSameRow.Add(node1.Value);
-                foreach (KeyValuePair<String, NavNode> node2 in graph)
-                {
-                    if ((node1.Key != node2.Key) && (node1.Key.Substring(0, node1.Key.IndexOf(':')) == node2.Key.Substring(0, node2.Key.IndexOf(':'))))
-                    {
-                        onSameRow.Add(node2.Value);
-                    }
-                }
-                onSameRow.Sort();
-                for (int i = 0; i < onSameRow.Count - 1; i++)
-                {
-                    connect(onSameRow[i], onSameRow[i + 1]);
-                }
-            }
-
-            foreach (KeyValuePair<String, NavNode> node1 in graph)
-            {
-                List<NavNode> onSameCol = new List<NavNode>();
-                onSameCol.Add(node1.Value);
-                foreach (KeyValuePair<String, NavNode> node2 in graph)
-                {
-                    if ((node1.Key != node2.Key) && (node1.Key.Substring(node1.Key.IndexOf(':') + 1) == node2.Key.Substring(node2.Key.IndexOf(':') + 1)))
-                    {
-                        onSameCol.Add(node2.Value);
-                    }
-                }
-                onSameCol.Sort();
-                for (int i = 0; i < onSameCol.Count - 1; i++)
-                {
-                    connect(onSameCol[i], onSameCol[i + 1]);
-                }
-            }
-        }
-
-        public Path aStar(Vector3 startPosition, NavNode destination)
+        public Path aStar(Vector3 startPosition, NavNode destination)                 // find best path between starting postition and a destination node
         {
             NavNode source = null;
             float closest = Int64.MaxValue;
+            Path thePath;                                     // path value to return
+            pathComplete = false;
+            open = new List<NavNode>();         //list of open nodes
+            closed = new List<NavNode>();       //list of closed nodes
+            path = new List<NavNode>();         //ist of nodes on the path
+
+            // Calculate the source node by finding the closest node the the start position
             foreach (KeyValuePair<String, NavNode> node in graph)
             {
                 float d = Vector3.Distance(startPosition,new Vector3(node.Value.Translation.X,node.Value.Translation.Y,node.Value.Translation.Z));
@@ -231,34 +182,32 @@ namespace AGMGSKv6
                 }
             }
 
-            pathComplete = false;
-            open = new List<NavNode>();
-            closed = new List<NavNode>();
-            List<NavNode> p = new List<NavNode>();
-            Path path= null;
+            
+            //start from source, set cost to 0 and add it to open list
             NavNode cur= source;
             cur.cost = 0;
-            
             open.Add(cur);
-            open.Sort(delegate(NavNode n1, NavNode n2)
-                {
-                    return n1.cost.CompareTo(n2.cost);
-                });
-            while (!(open.Count == 0))
-            {
 
-                cur = open[0];
-                open.RemoveAt(0);
+
+          //  open.Sort(sortByCost);
+            while (!(open.Count == 0))          //while not done travesring the open list
+            {
+                cur = open[0];                 // get the first node in open list
+                open.RemoveAt(0);              // remove it
+
+                // if reached desination
                 if (Vector3.Distance(cur.Translation,destination.Translation)<=cur.Distance)
                 {
                     break;
                 }
-                    closed.Add(cur);
-     //               cur.Navigatable = NavNode.NavNodeEnum.CLOSED;
+
+
+                closed.Add(cur);                        //add to closed list
+                cur.Navigatable = NavNode.NavNodeEnum.CLOSED;      //set color
 
                 foreach (NavNode node in cur.adjacent)
                 {
-                    if (!open.Contains(node) && !closed.Contains(node))
+                    if (!open.Contains(node) && !closed.Contains(node))           //if it's a non visited note
                     {
                         // keep track of the path
                         node.pathPredecessor = cur;
@@ -275,48 +224,53 @@ namespace AGMGSKv6
                         // calculate total cost
                         node.cost = node.distanceToSource + node.distanceToGoal;
 
-                        // Add the node the the open set
+                        // Add the node the the open set and set the color
                         open.Add(node);
                         node.Navigatable = NavNode.NavNodeEnum.OPEN;
                         
                     }
                 }
-                open.Sort(delegate(NavNode n1, NavNode n2)
-                {
-                    return n1.cost.CompareTo(n2.cost);
-                });
+                open.Sort(sortByCost);
 
 
             }
-            //    int count=0;
-            p.Add(new NavNode(destination.Translation));
-                while (Vector3.Distance(cur.Translation, source.Translation) != 0.0)
+                path.Add(new NavNode(destination.Translation));                // add the destination node to the path (without this line treasure win't be tagged)
+                
+                while (Vector3.Distance(cur.Translation, source.Translation) != 0.0)   //iteratively go through the node predecessors and add them to the path
                 {
-              //      count++;
-                    p.Add(cur);
+                    path.Add(cur);
                     cur.Navigatable = NavNode.NavNodeEnum.PATH;
                     cur=cur.pathPredecessor;
                 }
-            /*    int[,] pathValues=new int[count,2];
-                while (count != 1)
-                {
-                    count--;
-                    pathValues[count,0] = (int)p[count].Translation.X;
-                    pathValues[count,1] = (int)p[count].Translation.Z;
-                }*/
-
-                path = new Path(stage, p, Path.PathType.REVERSE);
-                path = path.reversePath(path);
+            
+                // create the path and set it to reverse mode to be able to go where the npc started from to avoid collisions
+                thePath = new Path(stage, path, Path.PathType.REVERSE);
+                thePath = thePath.reversePath(thePath);      // reverse the path since nodes were added from last to first
                 pathComplete = true;
-            return path;
+
+                aStarPath = new List<NavNode>();               // Create a list that contains all the other lists (usefull for drawing nodes)
+                foreach(NavNode navNode in stage.Ng.open){
+                    aStarPath.Add(navNode);
+                }
+                foreach (NavNode navNode in stage.Ng.closed)
+                {
+                    aStarPath.Add(navNode);
+                }
+                foreach (NavNode navNode in stage.Ng.path)
+                {
+                    aStarPath.Add(navNode);
+                }
+            
+                return thePath;              //return the path
 
         }
 
-        public int sortByCost(NavNode n1, NavNode n2)
+        public int sortByCost(NavNode n1, NavNode n2)      //helpfult to sort the nodes in  list by their cost
         {
             return n1.cost.CompareTo(n2.cost);
         }
-        public void connect(NavNode node1, NavNode node2)
+
+        public void connect(NavNode node1, NavNode node2)     // set two nodes adjacent to each other
         {
             if (!node1.adjacent.Contains(node2))
             {
@@ -335,7 +289,8 @@ namespace AGMGSKv6
         public override void Draw(GameTime gameTime)
         {
             Matrix[] modelTransforms = new Matrix[stage.WayPoint3D.Bones.Count];
-            foreach (KeyValuePair<String, NavNode> navNode in graph)
+            if(aStarPath!=null)
+            foreach (NavNode navNode in stage.Ng.aStarPath)
             {
                         
                 // draw the Path markers
@@ -354,13 +309,13 @@ namespace AGMGSKv6
                         }
                         else
                             effect.FogEnabled = false;
-                        effect.DirectionalLight0.DiffuseColor = navNode.Value.NodeColor;
-                        effect.AmbientLightColor = navNode.Value.NodeColor;
+                        effect.DirectionalLight0.DiffuseColor = navNode.NodeColor;
+                        effect.AmbientLightColor = navNode.NodeColor;
                         effect.DirectionalLight0.Direction = stage.LightDirection;
                         effect.DirectionalLight0.Enabled = true;
                         effect.View = stage.View;
                         effect.Projection = stage.Projection;
-                        effect.World = Matrix.CreateTranslation(navNode.Value.Translation) * modelTransforms[mesh.ParentBone.Index];
+                        effect.World = Matrix.CreateTranslation(navNode.Translation) * modelTransforms[mesh.ParentBone.Index];
                     }
                     stage.setBlendingState(true);
                     mesh.Draw();
@@ -369,10 +324,10 @@ namespace AGMGSKv6
             }
         }
 
-        private String skey(int x, int z)
+        private String skey(int x, int z)           // returns a formatted string to represent the key
         {
             return String.Format("{0}:{1}", x, z);
-        }
+        }
     }
 
     
