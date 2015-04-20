@@ -198,7 +198,7 @@ namespace AGMGSKv6
         public Vector3 getCenter(Object3D o)
         {
             Vector3 v = new Vector3();
-            int neighborCount = 0;
+            int neighbors = 0;
             foreach (Object3D obj in instance)
             {
                 float dist = Vector3.Distance(obj.Translation, o.Translation);
@@ -209,14 +209,14 @@ namespace AGMGSKv6
                     {
                         v.X += o.Translation.X;
                         v.Z += o.Translation.Z;
-                        neighborCount++;
+                        neighbors++;
                     }
                 }
             }
-            if (neighborCount == 0)
+            if (neighbors == 0)
                 return v;
-            v.X /= neighborCount;
-            v.Z /= neighborCount;
+            v.X /= neighbors;
+            v.Z /= neighbors;
             v.Normalize();
             return v;
         }
@@ -224,21 +224,22 @@ namespace AGMGSKv6
         public float getYaw(Object3D o)
         {
             float yaw = 0.0f;
-            int neighborCount = 0;
+            int neighbors = 0;
             foreach (Object3D obj in instance)
             {
                 if (obj != o)
                 {
-                    if (Vector3.Distance(obj.Translation, o.Translation) < 2000)
+                    float dist = Vector3.Distance(obj.Translation, o.Translation);
+                    if (dist < 2000)
                     {
                         yaw += o.Yaw;
-                        neighborCount++;
+                        neighbors++;
                     }
                 }
             }
-            if (neighborCount == 0)
+            if (neighbors == 0)
                 return yaw;
-            yaw /= neighborCount;
+            yaw /= neighbors;
             return yaw;
         }
         public double toggleFlocking() // flocking percent
