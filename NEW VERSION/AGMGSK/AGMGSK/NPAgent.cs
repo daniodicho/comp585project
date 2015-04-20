@@ -101,8 +101,13 @@ public class NPAgent : Agent {
 
 
         
-      }   
-
+      }
+/* Projec 2 Comp 565
+ * Arnold Santos   <arnold2020@yahoo.com>
+ * Cesar Zalzalah  <7701707@gmail.com>
+ * Dani Odicho     <dannykaka2009@hotmail.com>
+ * Ernie Ledezma   <eledezma518@gmail.com>
+*/
    /// <summary>
    /// Simple path following.  If within "snap distance" of a the nextGoal (a NavNode) 
    /// move to the NavNode, get a new nextGoal, turnToFace() that goal.  Otherwise 

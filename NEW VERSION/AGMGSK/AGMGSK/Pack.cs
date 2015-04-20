@@ -1,9 +1,11 @@
-﻿/* Arnold Santos   <arnold2020@yahoo.com>
+﻿/* Projec 2 Comp 565
+ * Arnold Santos   <arnold2020@yahoo.com>
  * Cesar Zalzalah  <7701707@gmail.com>
  * Dani Odicho     <dannykaka2009@hotmail.com>
  * Ernie Ledezma   <eledezma518@gmail.com>
+/* 
  * 
- * Ideas and research for flocking used:
+ * ideas and research for flocking used from:
  * http://www.red3d.com/cwr/boids/
  * http://gamedevelopment.tutsplus.com/tutorials/the-three-simple-rules-of-flocking-behaviors-alignment-cohesion-and-separation--gamedev-3444
  * 
@@ -66,7 +68,7 @@ namespace AGMGSKv6
         /// <param name="label"> name of pack</param>
         /// <param name="meshFile"> model of a pack instance</param>
         /// <param name="xPos, zPos">  approximate position of the pack </param>
-        /// <param name="aLeader"> alpha dog can be used for fvk center and alignment </param>
+        /// <param name="aLeader"> alpha dog can be used for flock center and alignment </param>
         public Pack(Stage theStage, string label, string meshFile, int nDogs, int xPos, int zPos, Object3D theLeader)
             : base(theStage, label, meshFile)
         {
@@ -90,7 +92,7 @@ namespace AGMGSKv6
         /// <summary>
         /// Each pack member's orientation matrix will be updated.
         /// Distribution has pack of dogs moving randomly.
-        /// Supports leaderless and leader based "flocking"
+        /// Supports leaderless and leader based "fvking"
         /// </summary>
         public override void Update(GameTime gameTime)
         {
@@ -141,11 +143,12 @@ namespace AGMGSKv6
 
             Vector3 alignment = Vector3.Zero;
 
-            if (distanceV < 2000) // objecs within this distance be aligned with leader
+            if (distanceV < 6000) // objecs within this distance be aligned with leader
             {
                 alignment.X = leader.Forward.X;
                 alignment.Z = leader.Forward.Z;
             }
+            alignment *= intensity;
             return alignment;
         }
 
@@ -176,7 +179,7 @@ namespace AGMGSKv6
                 {
                     Vector3 alienDistance = current.Translation - obj.Translation;
 
-                    if (alienDistance.Length() < 1000)  // if distance between aliens less than 600 radius then add separation
+                    if (alienDistance.Length() < 1000)  // if distance between aliens less than 1000 radius then add separation
                     {
                         alienDistance.Normalize();
                         separation += separation + alienDistance;
@@ -184,7 +187,7 @@ namespace AGMGSKv6
                 }
             }
 
-            if (distance < 1500) // if distance between alien and leader is less than 600 add separation
+            if (distance < 1500) // if distance between alien and leader is less than 1500 add separation
             {
                 Vector3 leaderDistance = current.Translation - leader.Translation;
                 separation += 5 * Vector3.Normalize(leaderDistance) / (leaderDistance.Length() / 600);
