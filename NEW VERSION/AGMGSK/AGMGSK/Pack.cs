@@ -57,6 +57,8 @@ namespace AGMGSKv6
     {
         Object3D leader;
         double flockingPercent = 0.0;
+        int intensity = 5;
+
 
         /// <summary>
         /// Construct a pack with an Object3D leader
@@ -139,15 +141,15 @@ namespace AGMGSKv6
             float distance = Vector3.Distance(current.Translation, leader.Translation);
 
             // Alignments force bounding area
-            float alignmentEffectStart = 1000.0f;
-            float alignmentEffectEnd = 3000.0f;
+            float alignmentEffectStart = 500.0f;
+            float alignmentEffectEnd = 4500.0f;
 
             Vector3 alignmentVector = new Vector3(leader.Forward.X, 0, leader.Forward.Z);
 
             // If the follower is within the bounding area, apply force
             if ((distance > alignmentEffectStart) && (distance < alignmentEffectEnd))
             {
-                return Vector3.Normalize(alignmentVector);
+                return Vector3.Normalize(alignmentVector)*intensity;
             }
 
             // Otherwise return a zero vector
@@ -163,7 +165,7 @@ namespace AGMGSKv6
             cohesion.Normalize();
 
             // Multiply by random cohesion force between 0 and 15
-            return cohesion * 15 * (float)random.NextDouble();
+            return cohesion * intensity * (float)random.NextDouble();
 
         }
 
@@ -193,7 +195,7 @@ namespace AGMGSKv6
                 separation += 5 * Vector3.Normalize(header) / (header.Length() / distanceRadius);
 
             }
-            return 3 * separation;
+            return separation * intensity;
         }
         public double toggleFlocking() // flocking percent
         {

@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>WORLD</Name>
     <Identity>
-      <SourceFilename>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1Content\ufo.x</SourceFilename>
+      <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1Content\ufo.x</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -46,7 +46,7 @@
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1Content\ufo.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1Content\ufo.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -59,7 +59,7 @@
     </Resource>
     <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1Content\ufo.x</SourceFilename>
+        <SourceFilename>C:\Users\Dani\Documents\GitHub\comp585p1\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1Content\ufo.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>
