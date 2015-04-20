@@ -111,6 +111,8 @@ public class Stage : Game {
     protected List<Treasures> TreasureList = null; // SW list object of all treasures
     public bool pathMode = true;     // SW: Path mode beween normal and treasure finding
     private NavGraph ng;
+    protected double flockInfo;
+    Pack pack;
 
 
 
@@ -435,7 +437,7 @@ public class Stage : Game {
 		Components.Add(wall);
 		// create a pack for "flocking" algorithms
 		// create a Pack of 6 dogs centered at (450, 500) that is leaderless
-		Pack pack = new Pack(this, "dog", "alien", 6, 450, 430, null);
+        pack = new Pack(this, "dog", "alien", 6, 450, 430, player.AgentObject);
 		Components.Add(pack);
       // ----------- OPTIONAL CONTENT HERE -----------------------
       // Load content for your project here
@@ -503,6 +505,7 @@ public class Stage : Game {
                    string.Format("npAgent:  Location ({0,5:f0},{1,3:f0},{2,5:f0})  Looking at ({3,5:f2},{4,5:f2},{5,5:f2})  Treasures {6}  Path Mode {7}",
                    npAgent.AgentObject.Translation.X, npAgent.AgentObject.Translation.Y, npAgent.AgentObject.Translation.Z,
                    npAgent.AgentObject.Forward.X, npAgent.AgentObject.Forward.Y, npAgent.AgentObject.Forward.Z, npAgent.IncTreasures, pathMode));
+                inspector.setInfo(13, string.Format("Flocking Percent:  " + flockInfo / 100 + "%"));
                 inspector.setMatrices("player", "npAgent", player.AgentObject.Orientation, npAgent.AgentObject.Orientation);
          }
       // Process user keyboard events that relate to the render state of the the stage
@@ -530,6 +533,10 @@ public class Stage : Game {
          inspector.ShowHelp = false; }
       else if (keyboardState.IsKeyDown(Keys.N) && !oldKeyboardState.IsKeyDown(Keys.N)){
           npAgent.changePath();
+      }
+      else if (keyboardState.IsKeyDown(Keys.P) && !oldKeyboardState.IsKeyDown(Keys.P)) // P key used for callng toggle method
+      {
+          flockInfo = pack.toggleFlocking();
       }
       // toggle update speed between FixedStep and ! FixedStep
       else if (keyboardState.IsKeyDown(Keys.T) && !oldKeyboardState.IsKeyDown(Keys.T))

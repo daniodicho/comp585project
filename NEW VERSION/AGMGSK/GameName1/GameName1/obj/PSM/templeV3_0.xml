@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>WORLD</Name>
     <Identity>
-      <SourceFilename>C:\Users\Dani\Desktop\comp585project-master\NEW VERSION\AGMGSK\GameName1\GameName1Content\templeV3.x</SourceFilename>
+      <SourceFilename>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1Content\templeV3.x</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -37,7 +37,7 @@
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\Dani\Desktop\comp585project-master\NEW VERSION\AGMGSK\GameName1\GameName1Content\templeV3.x</SourceFilename>
+        <SourceFilename>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1Content\templeV3.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>

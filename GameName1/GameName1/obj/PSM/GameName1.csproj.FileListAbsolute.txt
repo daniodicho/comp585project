@@ -50,13 +50,8 @@ C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\dogV6.
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\magentaAvatarV6.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\redAvatarV6.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\templeV3.xnb
-C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\treasure2.xnb
-C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\treasure3.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\magentaAvatarV3.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\redAvatarV3.xnb
-C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\snoman.xnb
-C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\snowplow.xnb
-C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\squirrel.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\alien.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\ufo.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\Consolas.xnb
@@ -64,7 +59,6 @@ C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\Courie
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\colorTexture.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\heightTexture.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\inspectorBackground.xnb
-C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\marble.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\Content\marble_0.xnb
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\bin\PSM\IgnoreMe.dll
 C:\Users\Frank\Desktop\comp585project\GameName1\GameName1\obj\PSM\GameName1.csprojResolveAssemblyReference.cache
