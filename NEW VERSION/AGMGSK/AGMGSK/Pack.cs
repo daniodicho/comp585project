@@ -46,9 +46,9 @@ namespace AGMGSKv6
 {
 
     /// <summary>
-    /// Pack represents a "fvk" of MovableObject3D's Object3Ds.
+    /// Pack represents a "flock" of MovableObject3D's Object3Ds.
     /// Usually the "player" is the leader and is set in the Stage's LoadContent().
-    /// With no leader, determine a "virtual leader" from the fvk's members.
+    /// With no leader, determine a "virtual leader" from the flock's members.
     /// Model3D's inherited List<Object3D> instance holds all members of the pack.
     ///
     /// 2/1/2015 last changed
@@ -90,7 +90,7 @@ namespace AGMGSKv6
         /// <summary>
         /// Each pack member's orientation matrix will be updated.
         /// Distribution has pack of dogs moving randomly.
-        /// Supports leaderless and leader based "fvking"
+        /// Supports leaderless and leader based "flocking"
         /// </summary>
         public override void Update(GameTime gameTime)
         {
