@@ -3,7 +3,7 @@
  * Dani Odicho     <dannykaka2009@hotmail.com>
  * Ernie Ledezma   <eledezma518@gmail.com>
  * 
- * Portions of code and ideas used from:
+ * Ideas and research for flocking used:
  * http://www.red3d.com/cwr/boids/
  * http://gamedevelopment.tutsplus.com/tutorials/the-three-simple-rules-of-flocking-behaviors-alignment-cohesion-and-separation--gamedev-3444
  * 
@@ -176,7 +176,7 @@ namespace AGMGSKv6
                 {
                     Vector3 alienDistance = current.Translation - obj.Translation;
 
-                    if (alienDistance.Length() < 600)  // if distance between aliens less than 600 radius then add separation
+                    if (alienDistance.Length() < 1000)  // if distance between aliens less than 600 radius then add separation
                     {
                         alienDistance.Normalize();
                         separation += separation + alienDistance;
@@ -184,7 +184,7 @@ namespace AGMGSKv6
                 }
             }
 
-            if (distance < 600) // if distance between alien and leader is less than 600 add separation
+            if (distance < 1500) // if distance between alien and leader is less than 600 add separation
             {
                 Vector3 leaderDistance = current.Translation - leader.Translation;
                 separation += 5 * Vector3.Normalize(leaderDistance) / (leaderDistance.Length() / 600);
