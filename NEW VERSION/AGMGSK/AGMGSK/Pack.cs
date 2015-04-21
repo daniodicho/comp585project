@@ -59,7 +59,6 @@ namespace AGMGSKv6
         double flockingPercent = 0.0;
         int intensity = 5;
 
-
         /// <summary>
         /// Construct a pack with an Object3D leader
         /// </summary>
@@ -97,27 +96,24 @@ namespace AGMGSKv6
         {
             foreach (Object3D obj in instance)
             {
-                 
 
                 if (random.NextDouble() * 100 < flockingPercent) // if flocking is present there must be leader
                 {
 
-                    Vector3 flockingVector = obj.Translation += getCohesion(obj) + getSeparation(obj);
-                    Vector3 objectForward = getAlignment(obj);
+                    Vector3 flockingV = obj.Translation += getCohesion(obj) + getSeparation(obj);
+                    Vector3 forwardV = getAlignment(obj);
 
-                    flockingVector.Normalize();
-                    objectForward.Normalize();
+                    flockingV.Normalize();
+                    forwardV.Normalize();
 
-                    float alienAngle = MathHelper.ToRadians(1);;
-                   
-                    if (random.NextDouble() < 0.07)
+                    float alienAngle = MathHelper.ToRadians(1);  //angle in radians
+
+                    if (random.NextDouble() < 0.07)  //as alien separate, cohese, and align with leader, have them randomly turn
                     {
                         if (random.NextDouble() < 0.5) obj.Yaw -= alienAngle; // turn left
                         else obj.Yaw += alienAngle; // turn right
                     }
-                    
-                    
-   
+
                 }
                 else //if no leader do normal behavior
                 {
@@ -136,80 +132,80 @@ namespace AGMGSKv6
             base.Update(gameTime);  // MovableMesh's Update();
         }
 
+
+
+        //ALIGNMENT
         public Vector3 getAlignment(Object3D current)
         {
-            float distance = Vector3.Distance(current.Translation, leader.Translation);
+            float distanceV = Vector3.Distance(current.Translation, leader.Translation);
 
-            // Alignments force bounding area
-            float alignmentEffectStart = 500.0f;
-            float alignmentEffectEnd = 4500.0f;
+            Vector3 alignment = Vector3.Zero;
 
-            Vector3 alignmentVector = new Vector3(leader.Forward.X, 0, leader.Forward.Z);
-
-            // If the follower is within the bounding area, apply force
-            if ((distance > alignmentEffectStart) && (distance < alignmentEffectEnd))
+            if (distanceV < 2000) // objecs within this distance be aligned with leader
             {
-                return Vector3.Normalize(alignmentVector)*intensity;
+                alignment.X = leader.Forward.X;
+                alignment.Z = leader.Forward.Z;
             }
-
-            // Otherwise return a zero vector
-            return Vector3.Zero;
+            return alignment;
         }
 
-        // Apply cohesion rules
+        //COHESION
         public Vector3 getCohesion(Object3D current)
         {
-            Vector3 cohesion = Vector3.Zero;
-            // Get vector toward leader's position
-            cohesion = leader.Translation - current.Translation;
-            cohesion.Normalize();
+            Vector3 cohesionV = Vector3.Zero;
 
-            // Multiply by random cohesion force between 0 and 15
-            return cohesion * intensity * (float)random.NextDouble();
+            cohesionV = leader.Translation - current.Translation;  //Cohesion vector towards leader
+
+            cohesionV.Normalize();
+
+            cohesionV = cohesionV * intensity * (float)random.NextDouble(); // add intensity; create al arger cohesion force
+
+            return cohesionV;
 
         }
 
-        // Apply separation rules
+        //SEPARATION
         public Vector3 getSeparation(Object3D current)
         {
             Vector3 separation = Vector3.Zero;
-            float distanceRadius = 700;
+            float distance = Vector3.Distance(leader.Translation, current.Translation);
+
             foreach (Object3D obj in instance)
             {
                 if (current != obj)
                 {
-                    Vector3 header = current.Translation - obj.Translation;
-                    // If distance between current boid and another object is less than distanceRadius
-                    // add to the separation force
-                    if (header.Length() < distanceRadius)
+                    Vector3 alienDistance = current.Translation - obj.Translation;
+
+                    if (alienDistance.Length() < 600)  // if distance between aliens less than 600 radius then add separation
                     {
-                        separation += 5 * Vector3.Normalize(header) / (header.Length() / distanceRadius);
+                        alienDistance.Normalize();
+                        separation += separation + alienDistance;
                     }
                 }
             }
 
-            // Add separation between leader and other boids
-            if (Vector3.Distance(leader.Translation, current.Translation) < distanceRadius)
+            if (distance < 600) // if distance between alien and leader is less than 600 add separation
             {
-                Vector3 header = current.Translation - leader.Translation;
-                separation += 5 * Vector3.Normalize(header) / (header.Length() / distanceRadius);
+                Vector3 leaderDistance = current.Translation - leader.Translation;
+                separation += 5 * Vector3.Normalize(leaderDistance) / (leaderDistance.Length() / 600);
 
             }
-            return separation * intensity;
+
+            separation = intensity * separation;
+            return separation;
         }
+
         public double toggleFlocking() // flocking percent
         {
             while (flockingPercent != 99)
             {
                 flockingPercent += 33;
                 return flockingPercent;
-
             }
 
             flockingPercent = 0;
             return flockingPercent;
         }
-
 
         public Object3D Leader
         {
