@@ -95,7 +95,7 @@ namespace AGMGSKv6
         {
             foreach (Object3D obj in instance)
             {
-                float angle = 0.0175f;   
+                 
 
                 if (random.NextDouble() * 100 < flockingPercent) // if flocking is present there must be leader
                 {
@@ -105,13 +105,21 @@ namespace AGMGSKv6
 
                     flockingVector.Normalize();
                     objectForward.Normalize();
+
+                    float alienAngle = MathHelper.ToRadians(1);;
+                   
+                    if (random.NextDouble() < 0.07)
+                    {
+                        if (random.NextDouble() < 0.5) obj.Yaw -= alienAngle; // turn left
+                        else obj.Yaw += alienAngle; // turn right
+                    }
                     
-                    obj.Yaw += angle;
+                    
    
                 }
                 else //if no leader do normal behavior
                 {
-                    angle = 0.3f;
+                    float angle = 0.3f;
                     obj.Yaw = 0.0f;
                     // change direction 4 time a second  0.07 = 4/60
                     if (random.NextDouble() < 0.07)
