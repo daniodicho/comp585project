@@ -74,7 +74,7 @@ namespace AGMGSKv6
             leader = theLeader;
             int spacing = stage.Spacing;
             // initial vertex offset of dogs around (xPos, zPos)
-            int[,] position = { { 0, 0 }, { 7, -4 }, { -5, -2 }, { -7, 4 }, { 5, 2 }, { 9, 7 }, { 6, 9 }, { -9, 2 } };
+            int[,] position = { { 0, 0 }, { 7, -4 }, { -5, -2 }, { -7, 4 }, { 5, 2 }, { 9, 7 }, { 6, 9 }, { 0, 5 }, { -10, 2 }, { -2, 2 } };
             for (int i = 0; i < position.GetLength(0); i++)
             {
                 int x = xPos + position[i, 0];
@@ -95,48 +95,23 @@ namespace AGMGSKv6
         {
             foreach (Object3D obj in instance)
             {
-                float distance;
+                float angle = 0.0175f;   
 
                 if (random.NextDouble() * 100 < flockingPercent) // if flocking is present there must be leader
                 {
 
-                    if (leader == null)
-                    {
-                        distance = Vector3.Distance(obj.Translation, getCenter(obj)); //checks distance between aliens
+                    Vector3 flockingVector = obj.Translation += getCohesion(obj) + getSeparation(obj);
+                    Vector3 objectForward = getAlignment(obj);
 
-                    }
-                    else
-                    {
-                        distance = Vector3.Distance(obj.Translation, leader.Translation); //checks distance between alien and leader
-                    }
-
-                    float innerDistance = 500f;
-                    float middleDistance = 900f;
-                    float totalDistance = innerDistance + middleDistance;
-
-                    if (distance < innerDistance) // if close to leader move around more
-                    {
-                        computeSeparation(obj);
-                    }
-                    else if (distance < middleDistance) // if in the midle start separating a bit more, and moving around
-                    {
-                        if (random.NextDouble() < (distance - innerDistance) / (middleDistance - innerDistance))
-                            computeSeparation(obj);
-                        else
-                            computeAlignment(obj);
-                    }
-                    else if (distance < totalDistance) // makes sure that aliens dont get stuck with eachother.
-                    {
-
-                        computeAlignment(obj);
-                    }
-
-                    else
-                        computeCohesion(obj);
+                    flockingVector.Normalize();
+                    objectForward.Normalize();
+                    
+                    obj.Yaw += angle;
+   
                 }
                 else //if no leader do normal behavior
                 {
-                    float angle = 0.3f;
+                    angle = 0.3f;
                     obj.Yaw = 0.0f;
                     // change direction 4 time a second  0.07 = 4/60
                     if (random.NextDouble() < 0.07)
@@ -151,96 +126,66 @@ namespace AGMGSKv6
             base.Update(gameTime);  // MovableMesh's Update();
         }
 
-        private Object3D computeSeparation(Object3D obj)
+        public Vector3 getAlignment(Object3D current)
         {
-            if (leader == null)
+            float distance = Vector3.Distance(current.Translation, leader.Translation);
+
+            // Alignments force bounding area
+            float alignmentEffectStart = 1000.0f;
+            float alignmentEffectEnd = 3000.0f;
+
+            Vector3 alignmentVector = new Vector3(leader.Forward.X, 0, leader.Forward.Z);
+
+            // If the follower is within the bounding area, apply force
+            if ((distance > alignmentEffectStart) && (distance < alignmentEffectEnd))
             {
-                obj.turnToFace(getCenter(obj));
-
-            }
-            else
-            {
-                obj.turnToFace(leader.Translation);
-
-            }
-
-            obj.Yaw += (float)Math.PI;
-
-            return obj;
-        }
-        private Object3D computeAlignment(Object3D obj)
-        {
-            if (leader == null)
-            {
-
-                obj.Yaw = getYaw(obj);
-            }
-            else
-            {
-                obj.Yaw = leader.Yaw;
+                return Vector3.Normalize(alignmentVector);
             }
 
-            return obj;
-        }
-        private Object3D computeCohesion(Object3D obj)
-        {
-            if (leader == null)
-            {
-                obj.turnToFace(getCenter(obj));
-            }
-            else
-            {
-                obj.turnToFace(leader.Translation);
-            }
-            return obj;
+            // Otherwise return a zero vector
+            return Vector3.Zero;
         }
 
-        public Vector3 getCenter(Object3D o)
+        // Apply cohesion rules
+        public Vector3 getCohesion(Object3D current)
         {
-            Vector3 v = new Vector3();
-            int neighbors = 0;
+            Vector3 cohesion = Vector3.Zero;
+            // Get vector toward leader's position
+            cohesion = leader.Translation - current.Translation;
+            cohesion.Normalize();
+
+            // Multiply by random cohesion force between 0 and 15
+            return cohesion * 15 * (float)random.NextDouble();
+
+        }
+
+        // Apply separation rules
+        public Vector3 getSeparation(Object3D current)
+        {
+            Vector3 separation = Vector3.Zero;
+            float distanceRadius = 700;
             foreach (Object3D obj in instance)
             {
-                float dist = Vector3.Distance(obj.Translation, o.Translation);
-                if (obj != o)
+                if (current != obj)
                 {
-
-                    if (dist < 2000)
+                    Vector3 header = current.Translation - obj.Translation;
+                    // If distance between current boid and another object is less than distanceRadius
+                    // add to the separation force
+                    if (header.Length() < distanceRadius)
                     {
-                        v.X += o.Translation.X;
-                        v.Z += o.Translation.Z;
-                        neighbors++;
+                        separation += 5 * Vector3.Normalize(header) / (header.Length() / distanceRadius);
                     }
                 }
             }
-            if (neighbors == 0)
-                return v;
-            v.X /= neighbors;
-            v.Z /= neighbors;
-            v.Normalize();
-            return v;
-        }
 
-        public float getYaw(Object3D o)
-        {
-            float yaw = 0.0f;
-            int neighbors = 0;
-            foreach (Object3D obj in instance)
+            // Add separation between leader and other boids
+            if (Vector3.Distance(leader.Translation, current.Translation) < distanceRadius)
             {
-                if (obj != o)
-                {
-                    float dist = Vector3.Distance(obj.Translation, o.Translation);
-                    if (dist < 2000)
-                    {
-                        yaw += o.Yaw;
-                        neighbors++;
-                    }
-                }
+                Vector3 header = current.Translation - leader.Translation;
+                separation += 5 * Vector3.Normalize(header) / (header.Length() / distanceRadius);
+
             }
-            if (neighbors == 0)
-                return yaw;
-            yaw /= neighbors;
-            return yaw;
+            return 3 * separation;
         }
         public double toggleFlocking() // flocking percent
         {
