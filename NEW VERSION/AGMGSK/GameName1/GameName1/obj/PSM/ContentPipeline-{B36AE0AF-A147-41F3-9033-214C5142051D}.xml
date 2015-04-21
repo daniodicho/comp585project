@@ -8,10 +8,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\100x100x100Brick.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.6834609-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\100x100x100Brick_0.xml</Key>
         <Value>2015-04-20T16:54:12.7348789-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:01.3977253-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\100x100x100Brick_0.xml</Key>
+        <Value>2015-04-20T11:03:58.0814264-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -21,10 +28,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\100x50x100Marker.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.694467-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\100x50x100Marker_0.xml</Key>
         <Value>2015-04-20T16:54:12.9290081-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:01.4267442-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\100x50x100Marker_0.xml</Key>
+        <Value>2015-04-20T11:03:58.2385338-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -34,10 +48,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\boundingSphereV3.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.7344936-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\boundingSphereV3_0.xml</Key>
         <Value>2015-04-20T16:54:12.9840446-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:01.5148042-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\boundingSphereV3_0.xml</Key>
+        <Value>2015-04-20T11:03:58.2995707-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -47,10 +68,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\cloudV3.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.7845268-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\cloudV3_0.xml</Key>
         <Value>2015-04-20T16:54:13.1231361-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:01.6458888-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\cloudV3_0.xml</Key>
+        <Value>2015-04-20T11:03:58.4296574-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -60,10 +88,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\dogV6.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8315608-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\dogV6_0.xml</Key>
         <Value>2015-04-20T16:54:13.1561584-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:01.8019924-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\dogV6_0.xml</Key>
+        <Value>2015-04-20T11:03:58.4676823-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -73,10 +108,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\magentaAvatarV6.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8575757-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\magentaAvatarV6_0.xml</Key>
         <Value>2015-04-20T16:54:13.1891799-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:01.8640351-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\magentaAvatarV6_0.xml</Key>
+        <Value>2015-04-20T11:03:58.5037062-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -86,10 +128,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\redAvatarV6.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8815916-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\redAvatarV6_0.xml</Key>
         <Value>2015-04-20T16:54:13.2262049-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:01.9240746-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\redAvatarV6_0.xml</Key>
+        <Value>2015-04-20T11:03:58.5407319-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -99,10 +148,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\templeV3.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.9386286-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\templeV3_0.xml</Key>
         <Value>2015-04-20T16:54:13.3512882-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:02.0731727-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\templeV3_0.xml</Key>
+        <Value>2015-04-20T11:03:58.6588091-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
       <Request>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\marble_0.xnb</Request>
     </Item>
@@ -113,10 +169,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\ufo.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:45.007676-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\ufo_0.xml</Key>
         <Value>2015-04-20T16:54:13.5814413-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:02.2262751-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\ufo_0.xml</Key>
+        <Value>2015-04-20T11:03:58.7378663-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -126,10 +189,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\alien.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.7064758-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\alien_0.xml</Key>
         <Value>2015-04-20T16:54:13.6014538-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:01.4467571-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\alien_0.xml</Key>
+        <Value>2015-04-20T11:03:58.7618782-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -139,10 +209,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\treasure2.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.9826598-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\treasure2_0.xml</Key>
         <Value>2015-04-20T16:54:13.6825084-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:02.1662333-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\treasure2_0.xml</Key>
+        <Value>2015-04-20T11:03:58.8679482-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -152,10 +229,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\treasure3.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:45.0036726-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\treasure3_0.xml</Key>
         <Value>2015-04-20T16:54:13.7015206-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:02.2152674-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\treasure3_0.xml</Key>
+        <Value>2015-04-20T11:03:58.886962-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -165,10 +249,17 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\gold.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8365613-07:00</Time>
       <Dependency>
         <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\gold_0.xml</Key>
         <Value>2015-04-20T16:54:13.7205344-07:00</Value>
+=======
+      <Time>2015-04-20T10:49:01.8130001-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\gold_0.xml</Key>
+        <Value>2015-04-20T11:03:58.9069745-07:00</Value>
+>>>>>>> parent of 793c9a3... changed node colors
       </Dependency>
     </Item>
     <Item>
@@ -178,7 +269,11 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\Consolas.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.6954681-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.4297462-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>colorTexture.png</Source>
@@ -187,7 +282,11 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\colorTexture.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.7885294-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.7069293-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>heightTexture.png</Source>
@@ -196,7 +295,11 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\heightTexture.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8385622-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.819006-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>inspectorBackground.png</Source>
@@ -205,7 +308,11 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\inspectorBackground.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8395637-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.8210058-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>marble.png</Source>
@@ -214,63 +321,99 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\marble.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8585779-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.8670379-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>100x100x100Brick.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\100x100x100Brick_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.6834609-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.3977253-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>100x50x100Marker.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\100x50x100Marker_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.694467-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.4267442-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>boundingSphereV3.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\boundingSphereV3_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.7344936-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.5148042-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>cloudV3.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\cloudV3_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.7845268-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.6458888-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>dogV6.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\dogV6_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8315608-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.8019924-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>magentaAvatarV6.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\magentaAvatarV6_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8575757-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.8640351-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>redAvatarV6.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\redAvatarV6_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8815916-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.9240746-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>templeV3.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\templeV3_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.9386286-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:02.0731727-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>marble.png</Source>
@@ -286,42 +429,66 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\bin\PSM\Content\marble_0.xnb</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8585779-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.8670379-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>ufo.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\ufo_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:45.007676-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:02.2262751-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>alien.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\alien_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.7064758-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.4467571-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>treasure2.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\treasure2_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.9826598-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:02.1662333-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>treasure3.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\treasure3_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:45.0036726-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:02.2152674-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <Item>
       <Source>gold.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Frank\Desktop\comp585project\NEW VERSION\AGMGSK\GameName1\GameName1\obj\PSM\gold_0.xml</Output>
+<<<<<<< HEAD
       <Time>2015-04-20T16:51:44.8365613-07:00</Time>
+=======
+      <Time>2015-04-20T10:49:01.8130001-07:00</Time>
+>>>>>>> parent of 793c9a3... changed node colors
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
